@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="hike-with-me" xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Hiwassee River Run (BMT) — Childers Creek to Unicoi Gap</name>
+    <desc>
+      Verified point waypoints only. This file does NOT contain the trail line (track).
+      Download the trackline from the four HikingProject BMT segments (13b-13c, 13d-13e,
+      14a, 14b-14c) and load it alongside these waypoints. Three key points could not be
+      reliably located as standalone coordinates and must be read off the downloaded
+      track at their trail miles: Coker Creek / FR 22B crossing (mile ~120.5),
+      TN-68 crossing + spring (mile ~124.5), and Unicoi Gap trailhead (mile ~129-130).
+    </desc>
+  </metadata>
+
+  <!-- START. Confidence: HIGH. Source: HikingProject seg 13b-13c start; USFS trailhead page. -->
+  <wpt lat="35.18947" lon="-84.49143">
+    <name>Childers Creek TH (START)</name>
+    <desc>Drop-off. Near Reliance, TN (~1733 Childers Creek Rd). Confidence: HIGH.</desc>
+    <sym>Trailhead</sym>
+  </wpt>
+
+  <!-- Confidence: HIGH. Source: USFS Cherokee NF "Towee Creek Launch". -->
+  <wpt lat="35.1948" lon="-84.4499">
+    <name>Towee Creek</name>
+    <desc>Riverside, near Day 1 camp area (BMT mile ~114.8). Confidence: HIGH.</desc>
+    <sym>Water Source</sym>
+  </wpt>
+
+  <!-- Confidence: HIGH (proxy). Source: USGS gage 03556400 at the powerhouse;
+       the swinging footbridge is immediately adjacent. -->
+  <wpt lat="35.18313" lon="-84.43854">
+    <name>Apalachia Powerhouse / swinging bridge</name>
+    <desc>TVA Apalachia Powerhouse; foot/swinging bridge adjacent. Watch for weekend water releases. Confidence: HIGH (powerhouse proxy).</desc>
+    <sym>Bridge</sym>
+  </wpt>
+
+  <!-- OPTIONAL SIDE TRIP. Confidence: MEDIUM. Source: aggregated USFS/onX/AllTrails; not primary-verified. -->
+  <wpt lat="35.19757" lon="-84.36915">
+    <name>Coker Creek Falls TH (optional)</name>
+    <desc>Optional ~5.4 mi RT side trip to a 40-ft cascade. Confidence: MEDIUM.</desc>
+    <sym>Waterfall</sym>
+  </wpt>
+
+  <!-- OPTIONAL SIDE TRIP. Confidence: HIGH. Source: GNIS (TopoZone/MountainZone/AllTrails POI). -->
+  <wpt lat="35.20369" lon="-84.32353">
+    <name>Buck Bald (optional summit)</name>
+    <desc>360-degree panorama, ~0.7 mi up FR113/FR198 from the BMT, near the end. Confidence: HIGH (coord); elevation figures conflict between sources.</desc>
+    <sym>Summit</sym>
+  </wpt>
+</gpx>

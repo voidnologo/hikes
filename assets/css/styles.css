@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Hike with Me — shared styles
+   Used by the landing page and every hike page (linked via a relative path).
+   Plain CSS, no build step, to match the existing voidnologo.github.io site.
+   ========================================================================== */
+
+:root {
+  /* Earthy trail palette */
+  --forest:      #2f4a37;
+  --forest-deep: #233a2b;
+  --moss:        #6b8a5e;
+  --sand:        #e9e2d0;
+  --bark:        #5a4634;
+  --ink:         #21251f;
+  --paper:       #faf8f2;
+  --paper-2:     #f1ede2;
+  --line:        #d8d0bd;
+  --accent:      #c4622d; /* trail-blaze orange, used sparingly */
+
+  --maxw: 1080px;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(33, 37, 31, 0.10);
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-head: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; color: var(--forest-deep); }
+
+a { color: var(--forest); }
+a:hover { color: var(--accent); }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+/* --- Site header / nav ------------------------------------------------- */
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(250, 248, 242, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 0.85rem; padding-bottom: 0.85rem;
+}
+.brand { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: var(--forest-deep); text-decoration: none; letter-spacing: 0.2px; }
+.brand span { color: var(--accent); }
+.nav a { margin-left: 1.25rem; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+
+/* --- Hero -------------------------------------------------------------- */
+.hero {
+  background: linear-gradient(160deg, var(--forest) 0%, var(--forest-deep) 100%);
+  color: var(--paper);
+  padding: 4rem 0 3.25rem;
+  text-align: center;
+}
+.hero h1 { color: var(--paper); font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0 0 0.5rem; }
+.hero p { max-width: 38rem; margin: 0 auto; font-size: 1.15rem; color: var(--sand); }
+
+/* --- Sections ---------------------------------------------------------- */
+section { padding: 3rem 0; }
+.section-title { font-size: 1.9rem; margin: 0 0 0.4rem; }
+.section-lead { color: var(--bark); margin: 0 0 2rem; max-width: 42rem; }
+
+/* --- Carousel ---------------------------------------------------------- */
+.carousel { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--paper-2); }
+.carousel__track { display: flex; transition: transform 0.5s ease; }
+.carousel__slide {
+  position: relative; min-width: 100%; aspect-ratio: 16 / 9;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--paper-2); color: var(--bark);
+}
+.carousel__slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Placeholder shown until real photos are added */
+.carousel__slide--placeholder {
+  background: repeating-linear-gradient(45deg, var(--paper-2), var(--paper-2) 18px, #ece6d6 18px, #ece6d6 36px);
+  flex-direction: column; text-align: center; padding: 2rem;
+}
+.carousel__slide--placeholder strong { font-family: var(--font-head); font-size: 1.3rem; color: var(--forest-deep); }
+.carousel__caption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 1.25rem 1.5rem 1rem;
+  background: linear-gradient(transparent, rgba(33,37,31,0.72));
+  color: #fff; font-size: 1rem;
+}
+.carousel__btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px; border: none; border-radius: 50%;
+  background: rgba(250,248,242,0.85); color: var(--forest-deep);
+  font-size: 1.4rem; cursor: pointer; display: grid; place-items: center;
+  box-shadow: var(--shadow); transition: background 0.2s;
+}
+.carousel__btn:hover { background: #fff; }
+.carousel__btn--prev { left: 0.75rem; }
+.carousel__btn--next { right: 0.75rem; }
+.carousel__dots { position: absolute; left: 0; right: 0; bottom: 0.6rem; display: flex; gap: 0.4rem; justify-content: center; }
+.carousel__dot { width: 9px; height: 9px; border-radius: 50%; border: none; background: rgba(255,255,255,0.55); cursor: pointer; padding: 0; }
+.carousel__dot[aria-current="true"] { background: #fff; }
+
+/* --- Hike cards (landing) ---------------------------------------------- */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.hike-card {
+  display: flex; flex-direction: column;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; text-decoration: none; color: var(--ink);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.hike-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.hike-card__banner { padding: 1.5rem 1.25rem; background: linear-gradient(135deg, var(--moss), var(--forest)); color: #fff; }
+.hike-card__banner h3 { color: #fff; margin: 0; font-size: 1.3rem; }
+.hike-card__body { padding: 1.1rem 1.25rem 1.35rem; }
+.hike-card__meta { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; margin: 0 0 0.6rem; font-size: 0.85rem; color: var(--bark); }
+.hike-card__meta span::before { content: "•  "; color: var(--moss); }
+.hike-card__meta span:first-child::before { content: ""; }
+.hike-card p { margin: 0; color: var(--bark); font-size: 0.95rem; }
+.badge { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.15rem 0.5rem; border-radius: 999px; }
+.badge--planned { background: var(--sand); color: var(--bark); }
+.badge--done { background: var(--moss); color: #fff; }
+
+/* --- Hike page content ------------------------------------------------- */
+.hike-meta { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; padding: 1.1rem 1.25rem; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); margin: 0 0 2rem; }
+.hike-meta div { font-size: 0.95rem; }
+.hike-meta dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--moss); font-weight: 700; }
+.hike-meta dd { margin: 0.1rem 0 0; font-weight: 600; }
+
+.resources { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  text-decoration: none; font-weight: 600; font-size: 0.95rem;
+  padding: 0.6rem 1.1rem; border-radius: 999px;
+  background: var(--forest); color: #fff; border: 1px solid var(--forest);
+  transition: background 0.18s, color 0.18s;
+}
+.btn:hover { background: var(--forest-deep); color: #fff; }
+.btn--ghost { background: transparent; color: var(--forest); }
+.btn--ghost:hover { background: var(--forest); color: #fff; }
+
+.day { border-left: 3px solid var(--moss); padding: 0.25rem 0 0.25rem 1.25rem; margin: 0 0 1.75rem; }
+.day h3 { margin: 0 0 0.25rem; }
+.day .day-stats { font-size: 0.85rem; color: var(--moss); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 0.6rem; }
+
+.callout { border: 1px solid var(--line); background: var(--paper-2); border-radius: var(--radius); padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.callout--warn { border-color: #e3c08a; background: #fdf6e7; }
+.callout h4 { margin: 0 0 0.4rem; font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--bark); }
+
+/* --- Footer ------------------------------------------------------------ */
+.site-footer { border-top: 1px solid var(--line); padding: 2rem 0; color: var(--bark); font-size: 0.9rem; text-align: center; }
+
+@media (max-width: 600px) {
+  .nav a { margin-left: 0.85rem; font-size: 0.85rem; }
+  .hero { padding: 3rem 0 2.5rem; }
+}
