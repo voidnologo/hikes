@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Forecast &middot; Smoky Mountain AT Traverse 2026</title>
+  <meta name="description" content="Daily-updated 7-day NWS weather forecast for each shelter location along the May 18-26, 2026 AT traverse of Great Smoky Mountains National Park.">
+  <style>
+    :root {
+      --color-bg: #f4f1eb;
+      --color-bg-alt: #ece8e0;
+      --color-text: #2c3e2d;
+      --color-text-muted: #5a6b5c;
+      --color-heading: #1a2e1c;
+      --color-accent: #3d7a4a;
+      --color-accent-light: #5a9e68;
+      --color-border: #c8c0b4;
+      --color-card: #ffffff;
+      --color-card-shadow: rgba(0,0,0,0.06);
+      --color-highlight: #e8f0e4;
+      --color-peak: #c0713a;
+      --color-link: #2d6a3e;
+      --color-warn: #a0522d;
+      --color-rain: #3a6a8c;
+      --font-body: 'Georgia', 'Times New Roman', serif;
+      --font-heading: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #1a1f1a;
+        --color-bg-alt: #222822;
+        --color-text: #d4d8d0;
+        --color-text-muted: #8f998a;
+        --color-heading: #e0e6dc;
+        --color-accent: #6abf7b;
+        --color-accent-light: #8ad498;
+        --color-border: #3a4238;
+        --color-card: #242a24;
+        --color-card-shadow: rgba(0,0,0,0.3);
+        --color-highlight: #2a352a;
+        --color-peak: #d4915e;
+        --color-link: #6abf7b;
+        --color-warn: #d4915e;
+        --color-rain: #7ba6c7;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+    }
+
+    /* Page header (matches gear.html) */
+    .page-header {
+      background: linear-gradient(175deg, #1a3a2a 0%, #2d5a3e 55%, #3d7a4a 100%);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .page-header .eyebrow {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0.75;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-header .subtitle {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    .page-header .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 2px;
+    }
+
+    .page-header .back-link:hover { color: #fff; border-bottom-color: #fff; }
+
+    /* Container */
+    .container { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 2.5rem 0; }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-heading);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-lede {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      max-width: 64ch;
+    }
+
+    p { margin-bottom: 1rem; }
+    a { color: var(--color-link); }
+    a:hover { text-decoration: underline; }
+
+    /* Status bar */
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+    }
+
+    .status-bar .status-text { color: var(--color-text-muted); }
+    .status-bar .status-text strong { color: var(--color-heading); }
+    .status-bar.stale {
+      background: rgba(192,113,58,0.12);
+      border-color: var(--color-peak);
+    }
+    .status-bar.stale .status-text strong { color: var(--color-peak); }
+    .status-bar.error {
+      background: rgba(160,82,45,0.15);
+      border-color: var(--color-warn);
+    }
+
+    .refresh-hint {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      font-style: italic;
+    }
+
+    /* Location cards */
+    .loc-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 1.1rem 1.25rem 1.25rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 3px var(--color-card-shadow);
+    }
+
+    .loc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      padding-bottom: 0.6rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    .loc-title {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .loc-title .day-num {
+      font-family: var(--font-heading);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+      background: var(--color-bg-alt);
+      padding: 0.18rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .loc-title .name {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-heading);
+    }
+
+    .loc-title .elev {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .loc-trip-date {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Forecast strip — 7 cells */
+    .fc-strip {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 0.4rem;
+    }
+
+    .fc-day {
+      background: var(--color-bg-alt);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 0.55rem 0.45rem;
+      text-align: center;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.18rem;
+    }
+
+    .fc-day.is-trip-date {
+      border-color: var(--color-peak);
+      border-width: 2px;
+      background: linear-gradient(180deg, var(--color-card) 0%, rgba(192,113,58,0.12) 100%);
+      padding: calc(0.55rem - 1px) calc(0.45rem - 1px);
+    }
+
+    .fc-day .fc-date {
+      font-family: var(--font-heading);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+    }
+
+    .fc-day .fc-mday {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      color: var(--color-heading);
+      margin-bottom: 0.15rem;
+    }
+
+    .fc-day .fc-temps {
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .fc-day .fc-high {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-peak);
+      line-height: 1;
+    }
+
+    .fc-day .fc-low {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-link);
+      line-height: 1;
+    }
+
+    .fc-day .fc-short {
+      font-size: 0.7rem;
+      color: var(--color-text-muted);
+      line-height: 1.2;
+      min-height: 2.4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .fc-day .fc-precip {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--color-rain);
+    }
+
+    .fc-day .fc-precip.dry { color: var(--color-text-muted); opacity: 0.5; }
+
+    .fc-day .fc-wind {
+      font-family: var(--font-heading);
+      font-size: 0.65rem;
+      color: var(--color-text-muted);
+    }
+
+    .fc-detailed-toggle {
+      margin-top: 0.6rem;
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      color: var(--color-link);
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .fc-detailed {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      background: var(--color-bg-alt);
+      border-radius: 6px;
+      padding: 0.6rem 0.8rem;
+      display: none;
+    }
+
+    .fc-detailed.open { display: block; }
+    .fc-detailed dt {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-heading);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 0.5rem;
+    }
+    .fc-detailed dt:first-child { margin-top: 0; }
+    .fc-detailed dd { margin-bottom: 0.3rem; line-height: 1.45; }
+
+    .empty-state {
+      background: var(--color-card);
+      border: 1px dashed var(--color-border);
+      border-radius: 10px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--color-text-muted);
+    }
+    .empty-state code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: var(--color-bg-alt);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      color: var(--color-heading);
+      font-size: 0.9em;
+    }
+
+    .loc-error {
+      background: rgba(160,82,45,0.1);
+      border-left: 4px solid var(--color-warn);
+      border-radius: 0 8px 8px 0;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.9rem;
+      color: var(--color-warn);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--color-border);
+    }
+
+    @media (max-width: 820px) {
+      .fc-strip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    @media (max-width: 500px) {
+      .fc-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="eyebrow">Smoky Mountain AT Traverse &middot; May 18&ndash;26, 2026</div>
+  <h1>Daily Forecast</h1>
+  <p class="subtitle">7-day NWS forecast at each shelter, updated daily</p>
+  <a class="back-link" href="index.html">&larr; Back to Itinerary</a>
+</header>
+
+<div class="container">
+  <section>
+    <h2>What's the weather doing on the crest right now?</h2>
+    <p class="section-lede">
+      A 7-day forecast for each of the 9 shelter locations along the route, pulled from the National Weather Service and refreshed daily.
+      The 30-year May averages on the <a href="gear.html#weather">gear page</a> are still the reference for what to pack &mdash;
+      this page is for the day-of conditions and, as the trip approaches, the actual forecast for each night on the trail.
+    </p>
+
+    <div id="status" class="status-bar">
+      <div class="status-text">Loading forecast&hellip;</div>
+    </div>
+
+    <div id="locations"></div>
+  </section>
+</div>
+
+<footer>
+  <p>Forecasts from <a href="https://www.weather.gov/">api.weather.gov</a> &middot; Refresh by running <code>/update-forecasts</code></p>
+</footer>
+
+<script>
+(function() {
+  const STATUS_EL = document.getElementById("status");
+  const LOC_EL = document.getElementById("locations");
+
+  function fmtRelative(updatedIso) {
+    const updated = new Date(updatedIso);
+    const ms = Date.now() - updated.getTime();
+    const hours = Math.round(ms / 3.6e6);
+    if (hours < 1) return "less than an hour ago";
+    if (hours < 24) return `${hours} hour${hours === 1 ? "" : "s"} ago`;
+    const days = Math.round(hours / 24);
+    return `${days} day${days === 1 ? "" : "s"} ago`;
+  }
+
+  function fmtAbsolute(iso) {
+    const d = new Date(iso);
+    return d.toLocaleString(undefined, {
+      month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short"
+    });
+  }
+
+  function fmtMday(dateStr) {
+    // dateStr is "YYYY-MM-DD" — parse as local to avoid TZ rollback
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const dt = new Date(y, m - 1, d);
+    return dt.toLocaleDateString(undefined, { month: "numeric", day: "numeric" });
+  }
+
+  function fmtWeekday(dateStr) {
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const dt = new Date(y, m - 1, d);
+    return dt.toLocaleDateString(undefined, { weekday: "short" });
+  }
+
+  function fmtTripDate(dateStr) {
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const dt = new Date(y, m - 1, d);
+    return dt.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+  }
+
+  function el(tag, attrs, children) {
+    const e = document.createElement(tag);
+    if (attrs) {
+      for (const [k, v] of Object.entries(attrs)) {
+        if (k === "class") e.className = v;
+        else if (k === "text") e.textContent = v;
+        else e.setAttribute(k, v);
+      }
+    }
+    if (children) {
+      for (const c of children) {
+        if (c == null) continue;
+        e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+      }
+    }
+    return e;
+  }
+
+  function renderDay(day, isTripDate) {
+    const cls = "fc-day" + (isTripDate ? " is-trip-date" : "");
+    const high = day.high_f != null ? day.high_f + "°" : "—";
+    const low = day.low_f != null ? day.low_f + "°" : "—";
+    const precip = day.precip_pct;
+    const precipClass = "fc-precip" + (precip == null || precip < 20 ? " dry" : "");
+    const precipText = precip != null ? precip + "% rain" : "—";
+    return el("div", { class: cls, title: day.detailed || "" }, [
+      el("div", { class: "fc-date", text: fmtWeekday(day.date) }),
+      el("div", { class: "fc-mday", text: fmtMday(day.date) }),
+      el("div", { class: "fc-temps" }, [
+        el("span", { class: "fc-high", text: high }),
+        el("span", { class: "fc-low", text: low }),
+      ]),
+      el("div", { class: "fc-short", text: day.short || "" }),
+      el("div", { class: precipClass, text: precipText }),
+      el("div", { class: "fc-wind", text: day.wind || "" }),
+    ]);
+  }
+
+  function renderLocation(loc) {
+    const card = el("div", { class: "loc-card" });
+
+    const header = el("div", { class: "loc-header" }, [
+      el("div", { class: "loc-title" }, [
+        el("span", { class: "day-num", text: "Day " + loc.day }),
+        el("span", { class: "name", text: loc.name }),
+        el("span", { class: "elev", text: loc.elevation_ft.toLocaleString() + " ft" }),
+      ]),
+      el("div", { class: "loc-trip-date", text: "Trip night: " + fmtTripDate(loc.trip_date) }),
+    ]);
+    card.appendChild(header);
+
+    if (!loc.forecast || loc.forecast.length === 0) {
+      card.appendChild(el("div", { class: "loc-error", text: "Forecast unavailable for this location. Try re-running /update-forecasts." }));
+      return card;
+    }
+
+    const strip = el("div", { class: "fc-strip" });
+    for (const day of loc.forecast.slice(0, 7)) {
+      strip.appendChild(renderDay(day, day.date === loc.trip_date));
+    }
+    card.appendChild(strip);
+
+    // Per-day expandable detail
+    const toggle = el("button", { class: "fc-detailed-toggle", text: "Show detailed forecasts" });
+    const detail = el("dl", { class: "fc-detailed" });
+    for (const day of loc.forecast.slice(0, 7)) {
+      detail.appendChild(el("dt", { text: fmtWeekday(day.date) + " " + fmtMday(day.date) }));
+      detail.appendChild(el("dd", { text: day.detailed || day.short || "—" }));
+    }
+    toggle.addEventListener("click", () => {
+      const open = detail.classList.toggle("open");
+      toggle.textContent = open ? "Hide detailed forecasts" : "Show detailed forecasts";
+    });
+    card.appendChild(toggle);
+    card.appendChild(detail);
+
+    return card;
+  }
+
+  function renderEmptyState(message) {
+    LOC_EL.innerHTML = "";
+    LOC_EL.appendChild(el("div", { class: "empty-state" }, [
+      el("p", { text: message }),
+      el("p", {}, [
+        document.createTextNode("Run "),
+        el("code", { text: "/update-forecasts" }),
+        document.createTextNode(" in Claude Code to refresh."),
+      ]),
+    ]));
+  }
+
+  function renderStatus(data) {
+    STATUS_EL.innerHTML = "";
+    const updated = data.updated;
+    const ageMs = Date.now() - new Date(updated).getTime();
+    const stale = ageMs > 26 * 3.6e6; // >26h is stale
+    const errors = (data.errors || []).length;
+
+    if (errors > 0) STATUS_EL.classList.add("error");
+    else if (stale) STATUS_EL.classList.add("stale");
+
+    const text = el("div", { class: "status-text" });
+    const strong = el("strong", { text: stale ? "Stale" : (errors ? "Partial" : "Updated") });
+    text.appendChild(strong);
+    text.appendChild(document.createTextNode(
+      " — " + fmtRelative(updated) + " (" + fmtAbsolute(updated) + ")" +
+      (errors > 0 ? `, ${errors} location${errors === 1 ? "" : "s"} failed` : "")
+    ));
+    STATUS_EL.appendChild(text);
+
+    STATUS_EL.appendChild(el("span", {
+      class: "refresh-hint",
+      text: stale ? "Run /update-forecasts to refresh" : "Source: NWS",
+    }));
+  }
+
+  fetch("weather-data.json", { cache: "no-store" })
+    .then(r => {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(data => {
+      renderStatus(data);
+      LOC_EL.innerHTML = "";
+      const sorted = data.locations.slice().sort((a, b) => a.day - b.day);
+      for (const loc of sorted) {
+        LOC_EL.appendChild(renderLocation(loc));
+      }
+    })
+    .catch(err => {
+      STATUS_EL.classList.add("error");
+      STATUS_EL.innerHTML = "";
+      STATUS_EL.appendChild(el("div", { class: "status-text" }, [
+        el("strong", { text: "No forecast data" }),
+        document.createTextNode(" — couldn't load weather-data.json (" + err.message + ")"),
+      ]));
+      renderEmptyState("Forecast data hasn't been generated yet.");
+    });
+})();
+</script>
+
+</body>
+</html>

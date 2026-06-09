@@ -1,0 +1,799 @@
+{
+  "updated": "2026-05-14T17:17:23+00:00",
+  "source": "api.weather.gov",
+  "locations": [
+    {
+      "day": 0,
+      "name": "Davenport Gap",
+      "elevation_ft": 2600,
+      "lat": 35.7536,
+      "lon": -83.1086,
+      "trip_date": "2026-05-18",
+      "nws_grid": "GSP/35,80",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 60,
+          "low_f": 44,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 60. North northwest wind around 12 mph, with gusts as high as 18 mph.",
+          "precip_pct": 3,
+          "wind": "12 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 72,
+          "low_f": 56,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 72. East northeast wind 0 to 5 mph.",
+          "precip_pct": 0,
+          "wind": "0 to 5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 80,
+          "low_f": 62,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 80. West southwest wind 1 to 5 mph.",
+          "precip_pct": 8,
+          "wind": "1 to 5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 83,
+          "low_f": 63,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 4pm. Mostly sunny, with a high near 83.",
+          "precip_pct": 18,
+          "wind": "2 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 84,
+          "low_f": 65,
+          "short": "Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 2pm. Sunny, with a high near 84.",
+          "precip_pct": 15,
+          "wind": "0 to 3 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 83,
+          "low_f": 65,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 83. Chance of precipitation is 40%.",
+          "precip_pct": 35,
+          "wind": "1 to 5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,40?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 80,
+          "low_f": 65,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "Showers and thunderstorms likely after 8am. Partly sunny, with a high near 80. Chance of precipitation is 70%.",
+          "precip_pct": 68,
+          "wind": "1 to 5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,70?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "name": "Cosby Knob",
+      "elevation_ft": 4700,
+      "lat": 35.7331,
+      "lon": -83.1933,
+      "trip_date": "2026-05-19",
+      "nws_grid": "MRX/98,43",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 50,
+          "low_f": 38,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 50. Northwest wind 15 to 20 mph, with gusts as high as 25 mph.",
+          "precip_pct": 3,
+          "wind": "15 to 20 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 62,
+          "low_f": 51,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 62. Northwest wind 5 to 10 mph.",
+          "precip_pct": 0,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 69,
+          "low_f": 58,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 69. Southwest wind 5 to 10 mph.",
+          "precip_pct": 7,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 72,
+          "low_f": 59,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 72. Southwest wind 5 to 10 mph. Chance of precipitation is 20%.",
+          "precip_pct": 17,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 73,
+          "low_f": 60,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 73.",
+          "precip_pct": 14,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 72,
+          "low_f": 61,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 72. Chance of precipitation is 30%.",
+          "precip_pct": 33,
+          "wind": "5 to 15 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 69,
+          "low_f": 61,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "Showers and thunderstorms likely after 8am. Partly sunny, with a high near 69. Chance of precipitation is 70%.",
+          "precip_pct": 67,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_hi,70?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "name": "Tricorner Knob",
+      "elevation_ft": 5920,
+      "lat": 35.6664,
+      "lon": -83.2492,
+      "trip_date": "2026-05-20",
+      "nws_grid": "GSP/30,76",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 51,
+          "low_f": 36,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 51. Northwest wind around 15 mph, with gusts as high as 29 mph.",
+          "precip_pct": 2,
+          "wind": "15 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 64,
+          "low_f": 47,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 64. Northwest wind around 7 mph.",
+          "precip_pct": 0,
+          "wind": "7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 70,
+          "low_f": 53,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 70. Southwest wind around 9 mph.",
+          "precip_pct": 7,
+          "wind": "9 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 73,
+          "low_f": 54,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 4pm. Mostly sunny, with a high near 73.",
+          "precip_pct": 17,
+          "wind": "5 to 9 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 74,
+          "low_f": 55,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 74.",
+          "precip_pct": 12,
+          "wind": "3 to 8 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 73,
+          "low_f": 55,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 73. Chance of precipitation is 30%.",
+          "precip_pct": 32,
+          "wind": "6 to 12 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 70,
+          "low_f": 55,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "Showers and thunderstorms likely after 8am. Partly sunny, with a high near 70. Chance of precipitation is 70%.",
+          "precip_pct": 65,
+          "wind": "7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,70?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "name": "Pecks Corner",
+      "elevation_ft": 5280,
+      "lat": 35.6411,
+      "lon": -83.3158,
+      "trip_date": "2026-05-21",
+      "nws_grid": "GSP/28,75",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 56,
+          "low_f": 36,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 56. Northwest wind around 15 mph, with gusts as high as 25 mph.",
+          "precip_pct": 4,
+          "wind": "15 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 69,
+          "low_f": 48,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 69. Northwest wind around 5 mph.",
+          "precip_pct": 0,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 76,
+          "low_f": 54,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 76. Southwest wind 5 to 10 mph.",
+          "precip_pct": 6,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 79,
+          "low_f": 54,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 4pm. Mostly sunny, with a high near 79. Southwest wind 5 to 10 mph. Chance of precipitation is 20%.",
+          "precip_pct": 17,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 80,
+          "low_f": 56,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 80.",
+          "precip_pct": 12,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 80,
+          "low_f": 56,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 80. Chance of precipitation is 30%.",
+          "precip_pct": 31,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 76,
+          "low_f": 56,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "Showers and thunderstorms likely after 8am. Partly sunny, with a high near 76. Chance of precipitation is 60%.",
+          "precip_pct": 64,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,60?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "name": "Icewater Spring",
+      "elevation_ft": 5920,
+      "lat": 35.6336,
+      "lon": -83.3725,
+      "trip_date": "2026-05-22",
+      "nws_grid": "GSP/26,74",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 52,
+          "low_f": 36,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 52. Northwest wind around 15 mph, with gusts as high as 30 mph.",
+          "precip_pct": 3,
+          "wind": "15 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 66,
+          "low_f": 48,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 66. Northwest wind around 5 mph.",
+          "precip_pct": 0,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 73,
+          "low_f": 54,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 73. Southwest wind 5 to 10 mph.",
+          "precip_pct": 6,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 75,
+          "low_f": 55,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 4pm. Mostly sunny, with a high near 75. South wind 5 to 10 mph. Chance of precipitation is 20%.",
+          "precip_pct": 17,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 76,
+          "low_f": 56,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 76.",
+          "precip_pct": 12,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 76,
+          "low_f": 56,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 76. Chance of precipitation is 30%.",
+          "precip_pct": 30,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 72,
+          "low_f": 56,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "A slight chance of rain showers before 8am, then showers and thunderstorms likely. Partly sunny, with a high near 72. Chance of precipitation is 60%.",
+          "precip_pct": 63,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,60?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "name": "Double Spring",
+      "elevation_ft": 5505,
+      "lat": 35.5589,
+      "lon": -83.5083,
+      "trip_date": "2026-05-23",
+      "nws_grid": "GSP/21,71",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 52,
+          "low_f": 36,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 52. Northwest wind around 15 mph, with gusts as high as 35 mph.",
+          "precip_pct": 0,
+          "wind": "15 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 66,
+          "low_f": 48,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 66. Northwest wind around 5 mph.",
+          "precip_pct": 0,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 73,
+          "low_f": 54,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 73. South wind 5 to 10 mph, with gusts as high as 20 mph.",
+          "precip_pct": 5,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 76,
+          "low_f": 55,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 5pm. Mostly sunny, with a high near 76. South wind around 5 mph. Chance of precipitation is 20%.",
+          "precip_pct": 16,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 77,
+          "low_f": 57,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 77.",
+          "precip_pct": 11,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 76,
+          "low_f": 57,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 76. Chance of precipitation is 30%.",
+          "precip_pct": 29,
+          "wind": "5 to 10 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 73,
+          "low_f": 57,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "A slight chance of rain showers before 8am, then showers and thunderstorms likely. Partly sunny, with a high near 73. Chance of precipitation is 60%.",
+          "precip_pct": 62,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,60?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "name": "Derrick Knob",
+      "elevation_ft": 4880,
+      "lat": 35.5256,
+      "lon": -83.6203,
+      "trip_date": "2026-05-24",
+      "nws_grid": "GSP/17,69",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 65,
+          "low_f": 40,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 65. North northwest wind around 12 mph, with gusts as high as 25 mph.",
+          "precip_pct": 0,
+          "wind": "12 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 77,
+          "low_f": 52,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 77. West wind 2 to 6 mph.",
+          "precip_pct": 0,
+          "wind": "2 to 6 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 84,
+          "low_f": 58,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 84. South southwest wind around 6 mph.",
+          "precip_pct": 4,
+          "wind": "6 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 86,
+          "low_f": 59,
+          "short": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+          "detailed": "A slight chance of showers and thunderstorms after 5pm. Mostly sunny, with a high near 86.",
+          "precip_pct": 15,
+          "wind": "6 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 87,
+          "low_f": 60,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 87.",
+          "precip_pct": 9,
+          "wind": "3 to 7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 87,
+          "low_f": 60,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 87. Chance of precipitation is 30%.",
+          "precip_pct": 27,
+          "wind": "3 to 7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 84,
+          "low_f": 60,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "A slight chance of rain showers before 8am, then showers and thunderstorms likely. Partly sunny, with a high near 84. Chance of precipitation is 60%.",
+          "precip_pct": 62,
+          "wind": "6 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,60?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "name": "Russell Field",
+      "elevation_ft": 4360,
+      "lat": 35.5443,
+      "lon": -83.7042,
+      "trip_date": "2026-05-25",
+      "nws_grid": "GSP/14,69",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "This Afternoon",
+          "high_f": 60,
+          "low_f": 40,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 60. North northwest wind around 12 mph, with gusts as high as 24 mph.",
+          "precip_pct": 0,
+          "wind": "12 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 72,
+          "low_f": 51,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 72. West wind 2 to 6 mph.",
+          "precip_pct": 0,
+          "wind": "2 to 6 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 79,
+          "low_f": 57,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 79. South southwest wind around 7 mph.",
+          "precip_pct": 4,
+          "wind": "7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 82,
+          "low_f": 58,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 82.",
+          "precip_pct": 13,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 83,
+          "low_f": 59,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 83.",
+          "precip_pct": 7,
+          "wind": "3 to 7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 82,
+          "low_f": 59,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 82. Chance of precipitation is 30%.",
+          "precip_pct": 26,
+          "wind": "3 to 7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 79,
+          "low_f": 59,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "A slight chance of rain showers before 8am, then showers and thunderstorms likely. Partly sunny, with a high near 79. Chance of precipitation is 60%.",
+          "precip_pct": 62,
+          "wind": "7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,60?size=medium"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "name": "Fontana Dam",
+      "elevation_ft": 1750,
+      "lat": 35.452,
+      "lon": -83.8081,
+      "trip_date": "2026-05-26",
+      "nws_grid": "GSP/11,65",
+      "forecast": [
+        {
+          "date": "2026-05-14",
+          "name": "Today",
+          "high_f": 69,
+          "low_f": 41,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 69. North northwest wind around 7 mph.",
+          "precip_pct": 0,
+          "wind": "7 mph",
+          "icon": "https://api.weather.gov/icons/land/day/skc?size=medium"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "Friday",
+          "high_f": 80,
+          "low_f": 52,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 80. South southwest wind around 3 mph.",
+          "precip_pct": 0,
+          "wind": "3 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-16",
+          "name": "Saturday",
+          "high_f": 87,
+          "low_f": 58,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 87. South southwest wind around 5 mph.",
+          "precip_pct": 3,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Sunday",
+          "high_f": 90,
+          "low_f": 59,
+          "short": "Mostly Sunny",
+          "detailed": "Mostly sunny, with a high near 90.",
+          "precip_pct": 12,
+          "wind": "3 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=medium"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "Monday",
+          "high_f": 90,
+          "low_f": 60,
+          "short": "Sunny",
+          "detailed": "Sunny, with a high near 90.",
+          "precip_pct": 6,
+          "wind": "2 to 6 mph",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=medium"
+        },
+        {
+          "date": "2026-05-19",
+          "name": "Tuesday",
+          "high_f": 90,
+          "low_f": 60,
+          "short": "Mostly Sunny then Chance Showers And Thunderstorms",
+          "detailed": "A chance of showers and thunderstorms after 2pm. Mostly sunny, with a high near 90. Chance of precipitation is 30%.",
+          "precip_pct": 25,
+          "wind": "5 mph",
+          "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,30?size=medium"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "Wednesday",
+          "high_f": 87,
+          "low_f": 60,
+          "short": "Showers And Thunderstorms Likely",
+          "detailed": "A slight chance of rain showers before 8am, then showers and thunderstorms likely. Partly sunny, with a high near 87. Chance of precipitation is 60%.",
+          "precip_pct": 62,
+          "wind": "3 mph",
+          "icon": "https://api.weather.gov/icons/land/day/tsra_sct,60?size=medium"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

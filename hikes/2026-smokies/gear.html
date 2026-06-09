@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gear List &amp; Meal Plan &middot; Smoky Mountain AT Traverse 2026</title>
+  <meta name="description" content="Printable gear list and meal planner for the May 18-26, 2026 AT traverse of Great Smoky Mountains National Park.">
+  <style>
+    :root {
+      --color-bg: #f4f1eb;
+      --color-bg-alt: #ece8e0;
+      --color-text: #2c3e2d;
+      --color-text-muted: #5a6b5c;
+      --color-heading: #1a2e1c;
+      --color-accent: #3d7a4a;
+      --color-accent-light: #5a9e68;
+      --color-border: #c8c0b4;
+      --color-card: #ffffff;
+      --color-card-shadow: rgba(0,0,0,0.06);
+      --color-highlight: #e8f0e4;
+      --color-peak: #c0713a;
+      --color-link: #2d6a3e;
+      --color-warn: #a0522d;
+      --font-body: 'Georgia', 'Times New Roman', serif;
+      --font-heading: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #1a1f1a;
+        --color-bg-alt: #222822;
+        --color-text: #d4d8d0;
+        --color-text-muted: #8f998a;
+        --color-heading: #e0e6dc;
+        --color-accent: #6abf7b;
+        --color-accent-light: #8ad498;
+        --color-border: #3a4238;
+        --color-card: #242a24;
+        --color-card-shadow: rgba(0,0,0,0.3);
+        --color-highlight: #2a352a;
+        --color-peak: #d4915e;
+        --color-link: #6abf7b;
+        --color-warn: #d4915e;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+    }
+
+    /* Page header */
+    .page-header {
+      background: linear-gradient(175deg, #1a3a2a 0%, #2d5a3e 55%, #3d7a4a 100%);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .page-header .eyebrow {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0.75;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-header .subtitle {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    .page-header .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 2px;
+    }
+
+    .page-header .back-link:hover { color: #fff; border-bottom-color: #fff; }
+
+    /* Navigation */
+    .toc {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .toc-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .toc-inner::-webkit-scrollbar { display: none; }
+
+    .toc a {
+      display: block;
+      padding: 0.75rem 1rem;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .toc a:hover {
+      color: var(--color-accent);
+      border-bottom-color: var(--color-accent);
+    }
+
+    .toc .print-btn {
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0 0.5rem auto;
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 6px;
+      flex-shrink: 0;
+      align-self: center;
+      position: sticky;
+      right: 0;
+      box-shadow: -8px 0 10px -4px var(--color-bg);
+    }
+
+    .toc .print-btn:hover { background: var(--color-accent-light); }
+
+    /* Layout */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 2.5rem 0; }
+    section + section { border-top: 1px solid var(--color-border); }
+
+    /* Headings */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-heading);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-lede {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      max-width: 60ch;
+    }
+
+    h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-heading);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    p { margin-bottom: 1rem; }
+    a { color: var(--color-link); }
+    a:hover { text-decoration: underline; }
+
+    /* Daily forecast strip (non-print) */
+    .daily-temps {
+      margin: 1rem 0 1.75rem;
+    }
+
+    .daily-temps-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .daily-temps-header h3 {
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .daily-temps-note {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      font-style: italic;
+    }
+
+    .daily-strip {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(0, 1fr));
+      gap: 0.35rem;
+    }
+
+    .day-temp {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 0.55rem 0.4rem;
+      text-align: center;
+      min-width: 0;
+    }
+
+    .day-temp.highlight {
+      border-color: var(--color-peak);
+      background: linear-gradient(180deg, var(--color-card) 0%, rgba(192,113,58,0.08) 100%);
+    }
+
+    .day-temp .dt-day {
+      font-family: var(--font-heading);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-text-muted);
+    }
+
+    .day-temp .dt-date {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--color-heading);
+      margin: 0.1rem 0 0.35rem;
+    }
+
+    .day-temp .dt-high {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-peak);
+      line-height: 1;
+    }
+
+    .day-temp .dt-low {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-link);
+      line-height: 1.2;
+    }
+
+    .day-temp .dt-elev {
+      font-size: 0.68rem;
+      color: var(--color-text-muted);
+      margin-top: 0.25rem;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 820px) {
+      .daily-strip { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 500px) {
+      .daily-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    /* Weather brief */
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+
+    .weather-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+    }
+
+    .weather-card .label {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .weather-card .value {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-heading);
+      margin-bottom: 0.2rem;
+    }
+
+    .weather-card .detail {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    .callout {
+      background: var(--color-highlight);
+      border-left: 4px solid var(--color-accent);
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.25rem 0;
+      font-size: 0.95rem;
+    }
+
+    .callout-warn { border-left-color: var(--color-peak); }
+    .callout p { margin-bottom: 0.4rem; }
+    .callout p:last-child { margin-bottom: 0; }
+
+    /* Gear list */
+    .gear-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .gear-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem 1.25rem;
+      break-inside: avoid;
+    }
+
+    .gear-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .gear-card .icon {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .gear-list { list-style: none; padding: 0; margin: 0; }
+
+    .gear-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      padding: 0.3rem 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .gear-list input[type="checkbox"] {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      margin-top: 3px;
+      accent-color: var(--color-accent);
+      cursor: pointer;
+    }
+
+    .gear-list .note {
+      display: block;
+      color: var(--color-text-muted);
+      font-size: 0.82rem;
+      font-style: italic;
+      margin-top: 0.1rem;
+    }
+
+    .gear-list .optional {
+      color: var(--color-text-muted);
+      font-style: italic;
+    }
+
+    /* Meal planner */
+    .meal-table-wrap { overflow-x: auto; margin: 1rem 0; }
+
+    .meal-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      min-width: 720px;
+    }
+
+    .meal-table th {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-text-muted);
+      text-align: left;
+      padding: 0.6rem 0.5rem;
+      border-bottom: 2px solid var(--color-accent);
+      background: var(--color-bg-alt);
+    }
+
+    .meal-table td {
+      padding: 0.6rem 0.5rem;
+      border-bottom: 1px solid var(--color-border);
+      vertical-align: top;
+      line-height: 1.4;
+    }
+
+    .meal-table .date-cell {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      white-space: nowrap;
+    }
+
+    .meal-table .date-cell .day-num {
+      display: block;
+      font-size: 0.7rem;
+      color: var(--color-text-muted);
+      font-weight: 600;
+      margin-top: 0.15rem;
+    }
+
+    .meal-table tr.travel-day td { background: var(--color-bg-alt); font-style: italic; }
+
+    /* Blank fill-in form */
+    .meal-table.blank td:not(.date-cell) {
+      height: 64px;
+      background-image: repeating-linear-gradient(
+        transparent,
+        transparent 23px,
+        var(--color-border) 23px,
+        var(--color-border) 24px
+      );
+    }
+
+    .sample-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 2rem 0 0.25rem;
+    }
+
+    .sample-header h2 { margin: 0; }
+
+    .sample-badge {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--color-peak);
+      color: #fff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .sample-wrap {
+      opacity: 0.92;
+      font-size: 0.88rem;
+    }
+
+    .sample-wrap .meal-table { font-size: 0.82rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--color-border);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      section { padding: 2rem 0; }
+      .gear-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Print styles ===== */
+    @media print {
+      :root {
+        --color-bg: #ffffff;
+        --color-bg-alt: #f5f5f5;
+        --color-text: #000;
+        --color-text-muted: #444;
+        --color-heading: #000;
+        --color-accent: #2d5a3e;
+        --color-border: #999;
+        --color-card: #fff;
+        --color-highlight: #f0f0f0;
+      }
+
+      @page { margin: 0.5in; size: letter; }
+
+      body {
+        font-size: 10.5pt;
+        line-height: 1.35;
+        background: #fff;
+      }
+
+      /* Hide nav, buttons, hero gradient */
+      .toc, .page-header .back-link, .print-btn, .scroll-hint { display: none !important; }
+
+      .page-header {
+        background: #fff !important;
+        color: #000 !important;
+        padding: 0 0 0.5rem 0;
+        text-align: left;
+        border-bottom: 2px solid #000;
+        margin-bottom: 0.75rem;
+      }
+
+      .page-header .eyebrow { color: #555; }
+      .page-header h1 { font-size: 18pt; color: #000; }
+      .page-header .subtitle { color: #333; font-size: 11pt; }
+
+      .container { padding: 0; max-width: 100%; }
+      section { padding: 0.75rem 0; page-break-inside: auto; }
+      section + section { border-top: 1px solid #999; }
+
+      h2 { font-size: 14pt; margin-bottom: 0.35rem; }
+      h3 { font-size: 10pt; }
+
+      .section-lede { font-size: 9.5pt; }
+
+      /* Keep gear cards intact across pages */
+      .gear-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        border: 1px solid #999;
+        padding: 0.5rem 0.7rem 0.7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .gear-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+      }
+
+      .gear-list li { font-size: 9.5pt; padding: 0.12rem 0; }
+      .gear-list .note { font-size: 8.5pt; }
+
+      /* Checkbox renders as printed empty square */
+      .gear-list input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 10pt;
+        height: 10pt;
+        border: 1px solid #000;
+        background: #fff !important;
+        margin-top: 2pt;
+        border-radius: 0;
+      }
+
+      .weather-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.4rem;
+        margin: 0.5rem 0;
+      }
+
+      .weather-card {
+        border: 1px solid #999;
+        padding: 0.4rem 0.5rem;
+        break-inside: avoid;
+      }
+      .weather-card .value { font-size: 11pt; }
+      .weather-card .detail { font-size: 8.5pt; }
+
+      .callout {
+        background: #f5f5f5 !important;
+        border-left: 3px solid #000;
+        padding: 0.4rem 0.6rem;
+        font-size: 9.5pt;
+        page-break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* Force meal planner onto its own page */
+      .meal-section { page-break-before: always; }
+
+      .meal-table-wrap { overflow: visible; }
+      .meal-table { min-width: 0; font-size: 8.5pt; }
+      .meal-table th, .meal-table td { padding: 0.3rem 0.35rem; }
+      .meal-table th {
+        background: #e8e8e8 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .meal-table tr.travel-day td {
+        background: #f2f2f2 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* Blank fill-in form: taller cells with ruled lines */
+      .meal-table.blank td:not(.date-cell) {
+        height: 70pt;
+        background-image: repeating-linear-gradient(
+          transparent,
+          transparent 17pt,
+          #bbb 17pt,
+          #bbb 17.5pt
+        ) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* Sample menu is reference only — hide on print */
+      .sample-section { display: none !important; }
+      .toc a[href="#sample-menu"] { display: none !important; }
+
+      /* Daily forecast strip is reference only — hide on print */
+      .daily-temps { display: none !important; }
+
+      footer { font-size: 8pt; padding: 0.5rem 0; }
+
+      a, a:visited { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="eyebrow">Smoky Mountain AT Traverse &middot; May 18&ndash;26, 2026</div>
+  <h1>Gear List &amp; Meal Plan</h1>
+  <p class="subtitle">Printable checklist &middot; Shelter-based 8-day backpacking trip</p>
+  <a class="back-link" href="index.html">&larr; Back to Itinerary</a>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#weather">Weather</a>
+    <a href="#essentials">Pack</a>
+    <a href="#sleep">Sleep</a>
+    <a href="#cook">Cook</a>
+    <a href="#clothing">Clothing</a>
+    <a href="#safety">Safety</a>
+    <a href="#meals">Meals</a>
+    <a href="#sample-menu">Sample</a>
+    <button class="print-btn" onclick="window.print()">Print</button>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Weather brief -->
+  <section id="weather">
+    <h2>What to Pack For: May Weather on the Crest</h2>
+    <p class="section-lede">
+      The route spends 7 of 8 nights at <strong>4,500&ndash;5,920 ft</strong> and tops out at Kuwohi (Clingmans Dome, <strong>6,643 ft</strong>).
+      Plan for temperatures about <strong>18&ndash;20&deg;F cooler</strong> than Gatlinburg, high humidity, and the likelihood of rain
+      on 1 day in 3. Pack for the averages below &mdash; for the actual expected conditions, see the
+      <a href="weather.html">daily forecast &rarr;</a>
+    </p>
+
+    <div class="daily-temps">
+      <div class="daily-temps-header">
+        <h3>Projected daily highs &amp; lows at each shelter elevation</h3>
+        <span class="daily-temps-note">30-year May averages, interpolated by elevation &middot; not a forecast</span>
+      </div>
+      <div class="daily-strip">
+        <div class="day-temp">
+          <div class="dt-day">Day 0</div>
+          <div class="dt-date">Mon 5/18</div>
+          <div><span class="dt-high">71&deg;</span> / <span class="dt-low">49&deg;</span></div>
+          <div class="dt-elev">Davenport Gap<br>2,600 ft</div>
+        </div>
+        <div class="day-temp">
+          <div class="dt-day">Day 1</div>
+          <div class="dt-date">Tue 5/19</div>
+          <div><span class="dt-high">62&deg;</span> / <span class="dt-low">45&deg;</span></div>
+          <div class="dt-elev">Cosby Knob<br>4,700 ft</div>
+        </div>
+        <div class="day-temp highlight">
+          <div class="dt-day">Day 2</div>
+          <div class="dt-date">Wed 5/20</div>
+          <div><span class="dt-high">57&deg;</span> / <span class="dt-low">43&deg;</span></div>
+          <div class="dt-elev">Tricorner Knob<br>5,920 ft</div>
+        </div>
+        <div class="day-temp">
+          <div class="dt-day">Day 3</div>
+          <div class="dt-date">Thu 5/21</div>
+          <div><span class="dt-high">60&deg;</span> / <span class="dt-low">44&deg;</span></div>
+          <div class="dt-elev">Pecks Corner<br>5,280 ft</div>
+        </div>
+        <div class="day-temp highlight">
+          <div class="dt-day">Day 4</div>
+          <div class="dt-date">Fri 5/22</div>
+          <div><span class="dt-high">57&deg;</span> / <span class="dt-low">43&deg;</span></div>
+          <div class="dt-elev">Icewater Spr.<br>5,920 ft</div>
+        </div>
+        <div class="day-temp">
+          <div class="dt-day">Day 5</div>
+          <div class="dt-date">Sat 5/23</div>
+          <div><span class="dt-high">59&deg;</span> / <span class="dt-low">44&deg;</span></div>
+          <div class="dt-elev">Double Spring<br>5,505 ft</div>
+        </div>
+        <div class="day-temp">
+          <div class="dt-day">Day 6</div>
+          <div class="dt-date">Sun 5/24</div>
+          <div><span class="dt-high">61&deg;</span> / <span class="dt-low">45&deg;</span></div>
+          <div class="dt-elev">Derrick Knob<br>4,880 ft</div>
+        </div>
+        <div class="day-temp">
+          <div class="dt-day">Day 7</div>
+          <div class="dt-date">Mon 5/25</div>
+          <div><span class="dt-high">63&deg;</span> / <span class="dt-low">45&deg;</span></div>
+          <div class="dt-elev">Russell Field<br>4,360 ft</div>
+        </div>
+        <div class="day-temp">
+          <div class="dt-day">Day 8</div>
+          <div class="dt-date">Tue 5/26</div>
+          <div><span class="dt-high">75&deg;</span> / <span class="dt-low">50&deg;</span></div>
+          <div class="dt-elev">Fontana Dam<br>1,750 ft</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="weather-grid">
+      <div class="weather-card">
+        <div class="label">Crest Daytime</div>
+        <div class="value">50&ndash;65&deg;F</div>
+        <div class="detail">Typical hiking temps at 5,000&ndash;6,000+ ft. Low 40s&deg;F possible in wind &amp; rain.</div>
+      </div>
+      <div class="weather-card">
+        <div class="label">Shelter Nights</div>
+        <div class="value">35&ndash;50&deg;F</div>
+        <div class="detail">Average low ~43&deg;F at the crest. Mid-20s&deg;F is possible during a cold snap.</div>
+      </div>
+      <div class="weather-card">
+        <div class="label">Rain</div>
+        <div class="value">~1 day in 3</div>
+        <div class="detail">~6 in. total rainfall at the crest in May. Fog and passing squalls are common.</div>
+      </div>
+      <div class="weather-card">
+        <div class="label">Wind &amp; Frost</div>
+        <div class="value">20&ndash;40 mph</div>
+        <div class="detail">Exposed ridges and balds. Rime/frost at 6,000+ ft still possible in mid-May.</div>
+      </div>
+    </div>
+
+    <div class="callout callout-warn">
+      <p><strong>Plan for the cold-snap, not the average.</strong> Mount LeConte has seen snow in mid-May and lows in the low 20s&deg;F. A 20&deg;F-rated sleeping bag and a full rain shell (jacket + pants) are non-negotiable, even though the forecast will probably look benign.</p>
+    </div>
+  </section>
+
+  <!-- The 10 essentials -->
+  <section id="essentials">
+    <h2>Core Essentials</h2>
+    <p class="section-lede">Pack, poles, permit, and the non-negotiables.</p>
+
+    <div class="gear-grid">
+      <div class="gear-card">
+        <h3><span class="icon">&#127959;</span> Pack &amp; Carry</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Backpack, 50&ndash;65L</li>
+          <li><input type="checkbox"> Pack liner (trash-compactor bag) <span class="note">primary waterproofing &mdash; trust this more than a pack cover</span></li>
+          <li><input type="checkbox"> Pack cover <span class="note">secondary, good against abrasion</span></li>
+          <li><input type="checkbox"> Trekking poles <span class="note">big help on the ~17,000 ft of descent</span></li>
+          <li><input type="checkbox"> Dry sacks / stuff sacks <span class="note">one for sleep clothes, one for food</span></li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128221;</span> Permits &amp; Docs</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Printed backcountry permit <span class="note">every shelter listed</span></li>
+          <li><input type="checkbox"> Printed parking tag <span class="note">each vehicle, dashboard</span></li>
+          <li><input type="checkbox"> Driver&rsquo;s license / ID</li>
+          <li><input type="checkbox"> Cash &amp; one credit card</li>
+          <li><input type="checkbox"> Emergency contact card <span class="note">plus Backcountry Office: 865-436-1297</span></li>
+          <li><input type="checkbox"> Car key (and a second hidden on the Fontana car)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sleep -->
+  <section id="sleep">
+    <h2>Sleep System</h2>
+    <p class="section-lede">Shelters only &mdash; no tent needed. Shelters are three-sided, open to the wind, with a raised platform floor. Pack as if you're sleeping outside at 40&deg;F with the chance of 25&deg;F.</p>
+
+    <div class="gear-grid">
+      <div class="gear-card">
+        <h3><span class="icon">&#128164;</span> Sleeping</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Sleeping bag, <strong>20&deg;F comfort rating</strong> <span class="note">synthetic or DWR-treated down; damp crest air kills untreated down</span></li>
+          <li><input type="checkbox"> Sleeping pad, R-value 3+ <span class="note">inflatable or CCF; shelter platforms are hard</span></li>
+          <li><input type="checkbox"> Small inflatable pillow <span class="note">or a stuff sack filled with your puffy</span></li>
+          <li><input type="checkbox"> Sleep socks (wool, dedicated, dry)</li>
+          <li><input type="checkbox"> Sleep base layer top &amp; bottom <span class="note">keep dry &mdash; never hike in these</span></li>
+          <li><input type="checkbox"> Earplugs <span class="note">shelters get loud; mice and snorers</span></li>
+          <li><input type="checkbox"> Eye mask <span class="optional">(optional)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cook & water -->
+  <section id="cook">
+    <h2>Cook Gear &amp; Water</h2>
+    <p class="section-lede">Springs are located near every shelter on the route but all water must be treated. Stove meals happen at the shelter only.</p>
+
+    <div class="gear-grid">
+      <div class="gear-card">
+        <h3><span class="icon">&#128293;</span> Stove &amp; Cookware</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Canister stove <span class="note">MSR PocketRocket, Soto Windmaster, etc.</span></li>
+          <li><input type="checkbox"> Fuel canister, 230g (plus a backup 110g) <span class="note">8 dinners + hot drinks = ~1.5 canisters</span></li>
+          <li><input type="checkbox"> Pot, 750&ndash;900 mL with lid</li>
+          <li><input type="checkbox"> Long-handled spoon or spork</li>
+          <li><input type="checkbox"> Lighter, <strong>+ backup mini Bic</strong> in a Ziploc</li>
+          <li><input type="checkbox"> Windscreen / pot cozy <span class="optional">(optional, speeds boils in wind)</span></li>
+          <li><input type="checkbox"> Dish rag / small sponge</li>
+          <li><input type="checkbox"> Dr. Bronner&rsquo;s or biodegradable soap, 1 oz</li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128166;</span> Water</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Water filter <span class="note">Sawyer Squeeze or Katadyn BeFree</span></li>
+          <li><input type="checkbox"> 2 L carrying capacity <span class="note">e.g., 1L hard bottle + 1L or 2L soft flask</span></li>
+          <li><input type="checkbox"> Backup chemical treatment <span class="note">Aquamira drops or tablets</span></li>
+          <li><input type="checkbox"> Electrolyte mix / LMNT / Nuun <span class="note">6&ndash;8 servings; helps in humidity</span></li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#129519;</span> Food Storage</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Food bag / Ursack or stuff sack <span class="note">every shelter has bear cables &mdash; use them nightly</span></li>
+          <li><input type="checkbox"> 25&ndash;30 ft of cord <span class="note">hanging items on cable; backup if the cable is broken</span></li>
+          <li><input type="checkbox"> Odor-proof liner (OPSak) <span class="optional">(optional, recommended)</span></li>
+          <li><input type="checkbox"> Gallon Ziplocs &times; 3 <span class="note">trash, smellable repacking, wet items</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rain & Clothing -->
+  <section id="clothing">
+    <h2>Rain Gear &amp; Clothing</h2>
+    <p class="section-lede">Rain gear is <strong>mandatory</strong> &mdash; afternoon squalls are routine and the crest stays wet in fog. Layer so you can be warm at 25&deg;F camp and cool on a 70&deg;F climb.</p>
+
+    <div class="gear-grid">
+      <div class="gear-card">
+        <h3><span class="icon">&#9729;</span> Rain Shell (required)</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Rain jacket, waterproof hooded shell <span class="note">not a windbreaker &mdash; 6+ in. of rain is possible in a week</span></li>
+          <li><input type="checkbox"> Rain pants <span class="note">also double as wind pants on exposed balds</span></li>
+          <li><input type="checkbox"> Ball cap / brimmed hat <span class="note">keeps rain off glasses under the hood</span></li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128373;</span> Insulation</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Puffy jacket <span class="note">synthetic or treated down, ~60g fill</span></li>
+          <li><input type="checkbox"> Fleece or grid midlayer <span class="note">warm layer that still works wet</span></li>
+          <li><input type="checkbox"> Warm beanie</li>
+          <li><input type="checkbox"> Light gloves / liner gloves <span class="note">cold wet mornings on the ridge</span></li>
+          <li><input type="checkbox"> Buff / neck gaiter</li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128373;&#65039;</span> Hiking Clothes</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Hiking shirt &times; 2 <span class="note">one sun-hoody long sleeve, one short sleeve</span></li>
+          <li><input type="checkbox"> Hiking pants or convertibles <span class="note">ticks are active in May &mdash; pants help</span></li>
+          <li><input type="checkbox"> Hiking shorts <span class="optional">(optional)</span></li>
+          <li><input type="checkbox"> Underwear &times; 2&ndash;3 <span class="note">synthetic or merino</span></li>
+          <li><input type="checkbox"> Sports bra (if applicable) &times; 2</li>
+          <li><input type="checkbox"> Hiking socks, wool, &times; 3 pairs <span class="note">rotate, dry on pack</span></li>
+          <li><input type="checkbox"> Sun hat or cap</li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128095;</span> Footwear</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Trail runners or boots <span class="note">broken in &mdash; May trail is muddy</span></li>
+          <li><input type="checkbox"> Gaiters <span class="optional">(optional)</span> <span class="note">keep mud and small stones out</span></li>
+          <li><input type="checkbox"> Camp shoes <span class="optional">(optional)</span> <span class="note">Crocs or Xero sandals; lets boots dry</span></li>
+          <li><input type="checkbox"> Moleskin / Leukotape <span class="note">blister prevention &mdash; apply early</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety / nav / misc -->
+  <section id="safety">
+    <h2>Navigation, Safety &amp; Personal</h2>
+    <p class="section-lede">Most shelters have a privy. Cell service is patchy on the crest. Assume you&rsquo;ll need to self-rescue or wait hours for help above 5,000 ft.</p>
+
+    <div class="gear-grid">
+      <div class="gear-card">
+        <h3><span class="icon">&#128205;</span> Navigation</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Map: NatGeo #229 <em>Great Smoky Mountains</em> <span class="note">waterproof paper</span></li>
+          <li><input type="checkbox"> AT Guide or FarOut app (Smokies section) <span class="note">download offline maps before leaving home</span></li>
+          <li><input type="checkbox"> Compass</li>
+          <li><input type="checkbox"> Printed itinerary <span class="note">mileage, shelter locations, water sources</span></li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128161;</span> Light &amp; Power</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Headlamp <span class="note">fresh batteries or full charge</span></li>
+          <li><input type="checkbox"> Extra batteries or backup light</li>
+          <li><input type="checkbox"> Phone, with offline maps loaded</li>
+          <li><input type="checkbox"> Power bank, 10,000 mAh <span class="note">enough for 8 days of moderate use</span></li>
+          <li><input type="checkbox"> Phone charging cable + wall brick (left in car)</li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128138;</span> First Aid &amp; Repair</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> First aid kit: bandaids, gauze, antiseptic wipes, tweezers</li>
+          <li><input type="checkbox"> Blister kit: Leukotape, moleskin, Compeed</li>
+          <li><input type="checkbox"> Ibuprofen, acetaminophen, Benadryl</li>
+          <li><input type="checkbox"> Any prescription meds (+1 extra day)</li>
+          <li><input type="checkbox"> Anti-diarrheal (Imodium)</li>
+          <li><input type="checkbox"> Tick key or fine-tip tweezers <span class="note">ticks out in May below 4,000 ft</span></li>
+          <li><input type="checkbox"> Duct tape <span class="note">wrap 3 ft around a trekking pole</span></li>
+          <li><input type="checkbox"> Tenacious Tape / gear repair patch</li>
+          <li><input type="checkbox"> Spare buckle or cord lock <span class="optional">(optional)</span></li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128737;</span> Safety</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Whistle <span class="note">3 blasts = distress</span></li>
+          <li><input type="checkbox"> Knife or multi-tool</li>
+          <li><input type="checkbox"> Emergency bivy or space blanket</li>
+          <li><input type="checkbox"> Fire starter <span class="note">Vaseline cotton balls or stormproof matches</span></li>
+          <li><input type="checkbox"> Satellite communicator <span class="optional">(Garmin inReach, optional but recommended)</span></li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#129656;</span> Toiletries</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Toothbrush (cut handle) + small toothpaste</li>
+          <li><input type="checkbox"> Floss picks</li>
+          <li><input type="checkbox"> Toilet paper, ~1/2 roll in Ziploc</li>
+          <li><input type="checkbox"> Trowel <span class="note">shelters have privies, but carry in case</span></li>
+          <li><input type="checkbox"> Hand sanitizer, 2 oz</li>
+          <li><input type="checkbox"> Sunscreen, 2 oz <span class="note">sun is strong at 6,000 ft even under haze</span></li>
+          <li><input type="checkbox"> Lip balm with SPF</li>
+          <li><input type="checkbox"> Bug spray / permethrin on clothes ahead of trip <span class="note">ticks are active</span></li>
+          <li><input type="checkbox"> Body wipes, ~8 <span class="optional">(optional but nice)</span></li>
+          <li><input type="checkbox"> Small quick-dry towel / bandana</li>
+          <li><input type="checkbox"> Pee rag / funnel (if applicable)</li>
+        </ul>
+      </div>
+
+      <div class="gear-card">
+        <h3><span class="icon">&#128036;</span> Nice to Have</h3>
+        <ul class="gear-list">
+          <li><input type="checkbox"> Small journal + pen</li>
+          <li><input type="checkbox"> Book / Kindle</li>
+          <li><input type="checkbox"> Playing cards</li>
+          <li><input type="checkbox"> Binoculars, compact <span class="optional">(optional)</span></li>
+          <li><input type="checkbox"> Trash bag / ziplock for packed-out trash</li>
+          <li><input type="checkbox"> Clean clothes &amp; shoes in the car at Fontana <span class="note">future you will be very grateful</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meal Planner -->
+  <section id="meals" class="meal-section">
+    <h2>Meal &amp; Menu Planner</h2>
+    <p class="section-lede">
+      Print this page and fill it in as you plan. Aim for ~3,000&ndash;4,000 kcal/day &mdash; roughly <strong>1.5&ndash;2 lb of food per person per day</strong>. Breakfasts and dinners are cooked at the shelter; lunches are eaten cold on trail.
+    </p>
+
+    <div class="meal-table-wrap">
+      <table class="meal-table blank">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+            <th>Snacks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="date-cell">Mon, May 18<span class="day-num">Day 0 &middot; arrival, 0.9 mi</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Tue, May 19<span class="day-num">Day 1 &middot; 7.1 mi</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Wed, May 20<span class="day-num">Day 2 &middot; 7.7 mi</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Thu, May 21<span class="day-num">Day 3 &middot; 5.2 mi (rest)</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Fri, May 22<span class="day-num">Day 4 &middot; 7.4 mi</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Sat, May 23<span class="day-num">Day 5 &middot; 13.8 mi (big day)</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Sun, May 24<span class="day-num">Day 6 &middot; 7.2 mi</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Mon, May 25<span class="day-num">Day 7 &middot; 9.2 mi</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td class="date-cell">Tue, May 26<span class="day-num">Day 8 &middot; 13.1 mi out</span></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p><strong>Repack tip:</strong> pull everything out of boxes. Combine oatmeal packets into one Ziploc. Label dinner Ziplocs with the day and any add-ins. You&rsquo;ll shed ~1/3 of the volume before leaving home.</p>
+    </div>
+
+    <div class="callout callout-warn">
+      <p><strong>Bear country:</strong> every food item, wrapper, toothpaste, sunscreen, and lip balm goes on the bear cable every night &mdash; no exceptions. Pack out <em>all</em> food waste, including fruit peels and noodle broth.</p>
+    </div>
+  </section>
+
+  <!-- Shared Group Items -->
+  <section id="shared">
+    <h2>Shared Group Items</h2>
+    <p class="section-lede">One per group &mdash; decide who carries what before leaving the trailhead.</p>
+    <div class="gear-grid">
+      <div class="gear-card">
+        <ul class="gear-list">
+          <li><input type="checkbox"> Stove &amp; fuel <span class="note">one per cook group</span></li>
+          <li><input type="checkbox"> Cook pot</li>
+          <li><input type="checkbox"> First aid kit (primary)</li>
+          <li><input type="checkbox"> Water filter (primary)</li>
+          <li><input type="checkbox"> Map + guidebook</li>
+          <li><input type="checkbox"> Bear cable cordage</li>
+          <li><input type="checkbox"> Satellite communicator</li>
+          <li><input type="checkbox"> Repair kit</li>
+          <li><input type="checkbox"> Soap / camp suds</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Menu (reference only) -->
+  <section id="sample-menu" class="sample-section">
+    <div class="sample-header">
+      <h2>Sample Menu</h2>
+      <span class="sample-badge">For Inspiration</span>
+    </div>
+    <p class="section-lede">
+      Just one way to fill the blank planner above. Swap in whatever you actually like to eat &mdash; morale food matters on day 5.
+    </p>
+
+    <div class="sample-wrap">
+      <div class="meal-table-wrap">
+        <table class="meal-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Breakfast</th>
+              <th>Lunch</th>
+              <th>Dinner</th>
+              <th>Snacks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="travel-day">
+              <td class="date-cell">Mon, May 18<span class="day-num">Day 0 &middot; arrival</span></td>
+              <td>On the road</td>
+              <td>On the road (stop in Gatlinburg or Cosby)</td>
+              <td>Mountain House Lasagna or Pad Thai + tortilla</td>
+              <td>Apple, jerky, chocolate bar</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Tue, May 19<span class="day-num">Day 1</span></td>
+              <td>Instant oatmeal (2 packets) + Carnation instant breakfast</td>
+              <td>2 flour tortillas + peanut butter + honey packet + dried banana chips</td>
+              <td>Knorr Pasta Side (Alfredo) + foil tuna + olive oil packet</td>
+              <td>Clif Bar, Snickers, trail mix (1/2 cup), Honey Stinger chews</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Wed, May 20<span class="day-num">Day 2</span></td>
+              <td>Granola + powdered whole milk + dried berries</td>
+              <td>Bagel + cheddar + summer sausage + mustard packet</td>
+              <td>Backpacker&rsquo;s Pantry Pad Thai + peanut butter packet</td>
+              <td>ProBar Meal, dried mango, M&amp;M&rsquo;s, almonds</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Thu, May 21<span class="day-num">Day 3 (rest)</span></td>
+              <td>Pop-Tarts (2) + instant breakfast</td>
+              <td>Tortillas + tuna packet + avocado (pack out pit) + hot sauce</td>
+              <td>Mountain House Beef Stew + mashed potato flakes to thicken</td>
+              <td>Cheese + crackers, Snickers, beef jerky, peanut M&amp;M&rsquo;s</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Fri, May 22<span class="day-num">Day 4</span></td>
+              <td>Instant oatmeal (2 packets) with peanut butter stirred in</td>
+              <td>Tortillas + hard salami + cheddar + dijon</td>
+              <td>Knorr Rice Side (Cheddar Broccoli) + chicken packet + butter packet</td>
+              <td>Clif Bar, trail mix, fruit leather, Sour Patch Kids</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Sat, May 23<span class="day-num">Day 5 (big day)</span></td>
+              <td>Double breakfast: granola + milk + Pop-Tarts + electrolyte drink</td>
+              <td>2 tortillas + PB&amp;J + Fritos (for the crunch)</td>
+              <td>Mountain House Chicken &amp; Dumplings + extra instant mashed potatoes</td>
+              <td>Extra snacks: Snickers &times; 2, jerky, Honey Stinger waffle, gummies, trail mix</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Sun, May 24<span class="day-num">Day 6</span></td>
+              <td>Oatmeal + dried blueberries + almonds</td>
+              <td>Tortillas + tuna + Fritos + hot sauce</td>
+              <td>Backpacker&rsquo;s Pantry Three Sisters Stew + parmesan packet</td>
+              <td>Bar, trail mix, dark chocolate, dried pineapple</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Mon, May 25<span class="day-num">Day 7</span></td>
+              <td>Granola + milk + instant breakfast</td>
+              <td>Bagel + PB + honey + jerky</td>
+              <td>Knorr Pasta Side (Parmesan) + foil salmon + olive oil</td>
+              <td>Clif Bar, Snickers, jerky, M&amp;M&rsquo;s, last of the cheese</td>
+            </tr>
+            <tr class="travel-day">
+              <td class="date-cell">Tue, May 26<span class="day-num">Day 8 &middot; out</span></td>
+              <td>Pop-Tarts <span class="optional">(eat and go &mdash; start by 8 AM)</span></td>
+              <td>Tortilla + last PB + any leftover snacks</td>
+              <td>Celebration dinner in town (pizza/burger/steaks)</td>
+              <td>Emergency bar, remaining trail mix</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>Smoky Mountain AT Traverse &middot; May 18&ndash;26, 2026 &middot; <a href="index.html">Back to itinerary</a></p>
+</footer>
+
+</body>
+</html>
