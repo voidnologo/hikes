@@ -35,7 +35,7 @@ SOURCE_EXTS = {".heic", ".jpg", ".jpeg", ".png"}
 
 # Source files to skip entirely — non-hiking photos that were in the source
 # folder by accident. Match basename without extension.
-EXCLUDE = {"IMG_1305", "IMG_1916"}
+EXCLUDE = {"IMG_1305", "IMG_2006"}
 FULL_MAX = 1800   # longest edge of the full-size image, in px
 THUMB_MAX = 480   # longest edge of the thumbnail, in px
 Q_FULL = 80
