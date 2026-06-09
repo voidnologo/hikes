@@ -32,6 +32,10 @@ except ImportError:
 pillow_heif.register_heif_opener()
 
 SOURCE_EXTS = {".heic", ".jpg", ".jpeg", ".png"}
+
+# Source files to skip entirely — non-hiking photos that were in the source
+# folder by accident. Match basename without extension.
+EXCLUDE = {"IMG_1305", "IMG_1916"}
 FULL_MAX = 1800   # longest edge of the full-size image, in px
 THUMB_MAX = 480   # longest edge of the thumbnail, in px
 Q_FULL = 80
@@ -111,7 +115,8 @@ def main() -> None:
 
     THUMB_DIR.mkdir(parents=True, exist_ok=True)
     sources = sorted(p for p in source_dir.iterdir()
-                     if p.is_file() and p.suffix.lower() in SOURCE_EXTS)
+                     if p.is_file() and p.suffix.lower() in SOURCE_EXTS
+                     and p.stem not in EXCLUDE)
 
     converted = sum(_convert_logged(src, args.force) for src in sources)
     total = rebuild_manifest()
