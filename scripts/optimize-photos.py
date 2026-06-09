@@ -37,6 +37,20 @@ THUMB_MAX = 480   # longest edge of the thumbnail, in px
 Q_FULL = 80
 Q_THUMB = 72
 
+# Files whose embedded orientation metadata is wrong, so exif_transpose can't fix
+# them (it trusts the tag). Map basename (no extension) -> correction, applied
+# after exif_transpose. Populated from a visual audit of the converted photos.
+MANUAL_ROTATE: dict[str, str] = {
+    # "IMG_1234": "180",     # upside down
+    # "IMG_5678": "90_CW",   # needs 90 deg clockwise
+}
+
+_CORRECTIONS = {
+    "90_CW": Image.Transpose.ROTATE_270,   # Pillow ROTATE is CCW, so 270 == 90 CW
+    "90_CCW": Image.Transpose.ROTATE_90,
+    "180": Image.Transpose.ROTATE_180,
+}
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = REPO_ROOT / "assets" / "img" / "photos"
 THUMB_DIR = OUT_DIR / "thumbs"
@@ -49,6 +63,10 @@ def web_optimize(src: Path, force: bool) -> bool:
         return False
     # exif_transpose bakes the orientation into pixels (WebP carries no such tag).
     image = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
+    # Override for files whose orientation metadata is wrong (see MANUAL_ROTATE).
+    correction = MANUAL_ROTATE.get(src.stem)
+    if correction:
+        image = image.transpose(_CORRECTIONS[correction])
     _save_webp(image, FULL_MAX, full_path, Q_FULL)
     _save_webp(image, THUMB_MAX, THUMB_DIR / f"{src.stem}.webp", Q_THUMB)
     return True
