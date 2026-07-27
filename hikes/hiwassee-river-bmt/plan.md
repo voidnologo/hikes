@@ -19,8 +19,9 @@ climb out on Day 3 carrying water.
 
 ## Daily breakdown (primary plan)
 
-**Day 1 — Childers Creek → Towee Creek area · ~7 mi · easy**
-- Afternoon drop-off works fine — this is a short, flat riverside day.
+**Day 1 — Childers Creek → Towee Creek area · ~7 mi · gentle grade**
+- Flat riverside walking, but ~7 mi under a loaded pack is a full day. Plan a **morning
+  drop-off** — with ~1h20m of driving from Chattanooga, that means leaving early.
 - Highlights: **The Narrows** (deep canyon, old riverbed rock formations), the
   **swinging bridge at the Apalachia Powerhouse**.
 - Camp: one of the **riverside primitive sites** (there's a good one ~2 mi in, and three
@@ -30,7 +31,7 @@ climb out on Day 3 carrying water.
   release.
 
 **Day 2 — Towee Creek area → Coker Creek (FR 22B) · ~5–6 mi · easy**
-- Short, relaxed day. More river walking past Big Bend.
+- The lightest day of the three, and a relaxed one. More river walking past Big Bend.
 - Camp: **Coker Creek primitive site** — boulders, swimming, the confluence. **Tank up
   all your water here** for tomorrow's dry climb (carry 3–4 L each).
 - Optional side trip: **Coker Creek Falls** (~5.4 mi round trip via the Coker Creek/JMT
@@ -112,7 +113,7 @@ choked, get out at the highway instead.
 ## Logistics & coordination
 
 - **Drop-off:** Childers Creek trailhead, near Reliance, TN (~1733 Childers Creek Rd) —
-  ~1h20m from Chattanooga.
+  ~1h20m from Chattanooga. **Morning**, not afternoon; Day 1 is a full 7 miles.
   [Google Maps](https://www.google.com/maps/search/?api=1&query=35.18947,-84.49143)
   (35.18947, -84.49143)
 - **Pickup:** Unicoi Gap trailhead on Joe Brown Hwy east of Coker Creek.
