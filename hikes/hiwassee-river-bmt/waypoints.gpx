@@ -7,10 +7,10 @@
     <desc>
       Verified point waypoints only. This file does NOT contain the trail line (track).
       Download the trackline from the four HikingProject BMT segments (13b-13c, 13d-13e,
-      14a, 14b-14c) and load it alongside these waypoints. Three key points could not be
+      14a, 14b-14c) and load it alongside these waypoints. Two key points could not be
       reliably located as standalone coordinates and must be read off the downloaded
-      track at their trail miles: Coker Creek / FR 22B crossing (mile ~120.5),
-      TN-68 crossing + spring (mile ~124.5), and Unicoi Gap trailhead (mile ~129-130).
+      track at their trail miles: Coker Creek / FR 22B crossing (mile ~120.5) and the
+      TN-68 crossing + spring (mile ~124.5).
     </desc>
   </metadata>
 
@@ -48,5 +48,13 @@
     <name>Buck Bald (optional summit)</name>
     <desc>360-degree panorama, ~0.7 mi up FR113/FR198 from the BMT, near the end. Confidence: HIGH (coord); elevation figures conflict between sources.</desc>
     <sym>Summit</sym>
+  </wpt>
+
+  <!-- END. Confidence: HIGH. Source: HikingProject seg 15a-15c start (BMT mile 129.2,
+       which is where seg 14 ends); corroborated independently by hiiker. -->
+  <wpt lat="35.22537" lon="-84.28992">
+    <name>Unicoi Gap TH (END)</name>
+    <desc>Pickup. On Joe Brown Hwy east of Coker Creek, TN (Monroe County) - NOT Unicoi Gap on the AT in Georgia, and not the town of Unicoi in NE Tennessee. Last stretch is gravel. Confidence: HIGH.</desc>
+    <sym>Trailhead</sym>
   </wpt>
 </gpx>

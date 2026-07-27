@@ -1,19 +1,19 @@
 # 3-Day / 2-Night Plan: Hiwassee River Run (BMT, Childers Creek → Unicoi Gap)
 
-**~19 miles point-to-point · late July · drop-off at Childers Creek, pickup at Unicoi Gap**
+**~19 miles point-to-point · mid-August · drop-off at Childers Creek, pickup at Unicoi Gap**
 
 ## The shape of the trip
 
 The route is naturally two-thirds gentle riverside (the BMT shares the John Muir
 Trail along the Hiwassee for ~10.5 mi) and one-third climb up Unicoi Mountain at the
 end. Total elevation is **+3,552 ft / −2,302 ft**, but almost all the climbing is in
-the final 9 miles after Coker Creek. The smart play in late-July heat: **do the cool,
+the final 9 miles after Coker Creek. The smart play in mid-August heat: **do the cool,
 shaded, water-rich river miles first, save the climb for a dawn start on the last day,
 and finish with a view.**
 
-**Critical water fact that drives the whole plan:** water is plentiful for the first
-~10 miles (river + creeks). **Coker Creek (mile ~10) is the last reliable water and the
-last established campsite.** After that there's one spring just south of the TN-68
+**Water:** it's plentiful for the first ~10 miles (river + creeks). **Coker Creek (mile
+~10) is the last reliable water and the last established campsite.** After that there's
+one spring just south of the TN-68
 crossing, then nothing until Unicoi Gap. So your camps are both on the river half; you
 climb out on Day 3 carrying water.
 
@@ -45,7 +45,7 @@ climb out on Day 3 carrying water.
   Unicois, the lakes) before you drop to the gap.
 - Finish at **Unicoi Gap** for pickup.
 
-**Heat-safety variant:** If a 9-mi dry climb in late-July heat sounds like too much for
+**Heat-safety variant:** If a 9-mi dry climb in mid-August heat sounds like too much for
 the last day, split it — push past Coker Creek on Day 2 and **dry-camp near the TN-68
 spring** (carry water up from Coker), making Day 3 a short ~4.7 mi to Unicoi Gap.
 Tradeoff: you haul camp water and lose a riverside night. Only worth it if the forecast
@@ -57,22 +57,29 @@ is brutal.
   — treat, don't skip.
 - River/creek water is abundant Days 1–2. The constraint is **Coker Creek → Unicoi Gap
   (9 mi, essentially dry except the TN-68 spring)**. Leave Coker with full capacity.
-- Late July after a dry spell: confirm the TN-68 spring is flowing via recent FarOut
+- Mid-August after a dry spell: confirm the TN-68 spring is flowing via recent FarOut
   comments before you rely on it; if unsure, carry the full 9 miles' worth from Coker.
 
 ## Logistics & coordination
 
 - **Drop-off:** Childers Creek trailhead, near Reliance, TN (~1733 Childers Creek Rd) —
   ~1h20m from Chattanooga.
-- **Pickup:** Unicoi Gap trailhead on Joe Brown Hwy near Coker Creek (note: this is
-  **Coker Creek / Tellico Plains TN**, *not* the town of Unicoi in NE Tennessee — make
-  sure whoever's picking you up maps the right one). The last stretch to the gap is
-  gravel.
+  [Google Maps](https://www.google.com/maps/search/?api=1&query=35.18947,-84.49143)
+  (35.18947, -84.49143)
+- **Pickup:** Unicoi Gap trailhead on Joe Brown Hwy east of Coker Creek.
+  [Google Maps](https://www.google.com/maps/search/?api=1&query=35.22537,-84.28992)
+  (35.22537, -84.28992). The last stretch to the gap is gravel.
+  ⚠️ **Send the driver the coordinates, not the name.** There are three "Unicoi"s that
+  will mis-route them: Unicoi Gap on the AT in **Georgia**, the town of **Unicoi** in NE
+  Tennessee, and Unicoi County. Yours is in **Monroe County, TN**, near Coker Creek.
+- **Maps:** `waypoints.gpx` (in this folder) has both trailheads and the river waypoints.
+  Import it into onX Backcountry (Web Map → Import), Gaia, or CalTopo. It's waypoints
+  only — no trackline; pull that from the HikingProject BMT segments under Key sources.
 - Share your itinerary, the two trailhead pins, and a check-in time with your drivers.
   Cell coverage in the gorge is spotty — agree on a pickup time/place in advance, with a
   fallback.
 
-## Late-July notes
+## Mid-August notes
 
 - **Canister stove** — bring it regardless of fire-restriction status (stoves stay legal
   even under Stage 1 burn bans). Plan to cook on it, not on a fire.
