@@ -77,6 +77,25 @@ follow it to its eastern terminus at Brushy Creek near Farner.
   point on the trail, **not a verified trailhead or parking area**. Worth one call to the
   Ocoee/Hiwassee Ranger District (423-476-9700) to ask where the east trailhead parking
   is — you're calling them about fire restrictions anyway.
+
+**Fallback for the variant — exit at TN-68 (JMT mile 17.7):** If the ranger can't give a
+clear answer on the east trailhead, or recent reports say the last three miles are
+choked, get out at the highway instead.
+
+- **~17.7 mi total** — three miles shorter than the full JMT, and slightly shorter than
+  the ~19 mi primary route.
+- **Removes both open questions at once.** The three miles you skip are precisely the
+  stretch that leaves the river, climbs past Millers Cove, and carries the blowdown
+  reports. And TN-68 is a paved state highway — no ambiguity about whether the trail
+  reaches the road, and nothing for a driver to get wrong.
+- **It's the most riverside version of the trip.** The JMT hugs the water through mile
+  17.7; the ridge walk is only in the part you're dropping.
+- **Cost:** you don't finish the trail, and there's no summit or overlook at the end —
+  the trip just stops at a road.
+- ⚠️ **Don't confuse the two TN-68 crossings.** The BMT crosses TN-68 at *its* mile ~14.5
+  up on the mountain (that's the one with the spring). This is a different crossing of
+  the same highway, down near the river. Get the pin from onX where the JMT track meets
+  the road — it isn't in `waypoints.gpx`.
 - **Condition risk:** the eastern half is much less travelled than the Reliance end.
   Reports mention overgrowth and downed trees. Verify before committing to it as the
   exit — a blowdown-choked final 3 miles is a bad surprise on pickup day.
