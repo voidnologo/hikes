@@ -57,4 +57,15 @@
     <desc>Pickup. On Joe Brown Hwy east of Coker Creek, TN (Monroe County) - NOT Unicoi Gap on the AT in Georgia, and not the town of Unicoi in NE Tennessee. Last stretch is gravel. Confidence: HIGH.</desc>
     <sym>Trailhead</sym>
   </wpt>
+
+  <!-- RIVER EXIT VARIANT (not on the primary BMT route). Confidence: MEDIUM.
+       Source: onX Backcountry point for the JMT east segment (FS 152). This is a point
+       ON the trail near its east end, NOT a verified trailhead or parking area - onX
+       does not show the mapped trail meeting a drivable road here. Do not hand this to
+       a pickup driver without confirming road access first. -->
+  <wpt lat="35.18771" lon="-84.30387">
+    <name>JMT east end (variant exit)</name>
+    <desc>East end of the John Muir NRT (FS 152), ~2.7 mi south of Unicoi Gap. Drive in: TN-68 to Old State Highway 68 to Prince Ferry Rd, northeast along the north bank to the Brushy Creek crossing (Prince Ferry continues into NC as State Road 1322). Where the trail meets the road is still unconfirmed - onX shows a gap of a few tenths of a mile below the switchbacks. This is a point on the trail, NOT a verified trailhead or parking area. Confidence: MEDIUM (trail point), LOW (as a pickup spot).</desc>
+    <sym>Trailhead</sym>
+  </wpt>
 </gpx>

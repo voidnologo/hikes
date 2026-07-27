@@ -51,6 +51,36 @@ spring** (carry water up from Coker), making Day 3 a short ~4.7 mi to Unicoi Gap
 Tradeoff: you haul camp water and lose a riverside night. Only worth it if the forecast
 is brutal.
 
+**River exit variant (skips Unicoi Mountain):** Instead of turning uphill with the BMT,
+stay on the **John Muir Trail (FS 152)** past the Unicoi Mountain Trail junction and
+follow it to its eastern terminus at Brushy Creek near Farner.
+
+- **20.7 mi total** vs ~19 — but riverside for 17.7 of them. The JMT crosses TN-68 at
+  its mile 17.7 (a *different* crossing from the BMT's at ~14.5), then runs the ridge
+  past Millers Cove before switchbacking down to Brushy Creek.
+- **Kills the dry climb.** The whole primary plan is built around Coker Creek being the
+  last reliable water before 9 exposed miles. This variant removes that constraint
+  instead of managing it — the main reason to consider it in August.
+- **Costs:** no Buck Bald panorama, no finish at the gap, and the last ~3 mi leave the
+  river anyway.
+- **Trail end:** `35.18771, -84.30387` (onX, JMT east segment) — about 2.7 mi south of
+  Unicoi Gap. Now in `waypoints.gpx` as *JMT east end (variant exit)*.
+- **Driving to the exit:** **TN-68 → Old State Highway 68 → Prince Ferry Road.** Prince
+  Ferry runs northeast along the north bank of the Hiwassee to the Brushy Creek crossing,
+  and keeps going into North Carolina, where it's signed **State Road 1322**. (USFS
+  literature calls the terminus "FH 37 near Farner" with parking on FR 37 and FR 311 —
+  those are likely the Forest Highway designations for Old State Hwy 68 / Prince Ferry,
+  but the names on the ground are the ones above.)
+- ⚠️ **Still unconfirmed: where the trail actually meets the road.** onX doesn't show the
+  mapped trail reaching Prince Ferry Rd — there's a gap of a few tenths of a mile at the
+  bottom of the switchbacks and a "Closed Road" just north. `35.18771, -84.30387` is a
+  point on the trail, **not a verified trailhead or parking area**. Worth one call to the
+  Ocoee/Hiwassee Ranger District (423-476-9700) to ask where the east trailhead parking
+  is — you're calling them about fire restrictions anyway.
+- **Condition risk:** the eastern half is much less travelled than the Reliance end.
+  Reports mention overgrowth and downed trees. Verify before committing to it as the
+  exit — a blowdown-choked final 3 miles is a bad surprise on pickup day.
+
 ## Water plan
 
 - **Treat everything** (filter or chemical). Upstream farms on Childers and Towee Creeks
