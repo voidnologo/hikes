@@ -72,9 +72,11 @@ is brutal.
   ⚠️ **Send the driver the coordinates, not the name.** There are three "Unicoi"s that
   will mis-route them: Unicoi Gap on the AT in **Georgia**, the town of **Unicoi** in NE
   Tennessee, and Unicoi County. Yours is in **Monroe County, TN**, near Coker Creek.
-- **Maps:** `waypoints.gpx` (in this folder) has both trailheads and the river waypoints.
-  Import it into onX Backcountry (Web Map → Import), Gaia, or CalTopo. It's waypoints
-  only — no trackline; pull that from the HikingProject BMT segments under Key sources.
+- **Maps:** the route is on
+  [onX Backcountry](https://webmap.onxmaps.com/backcountry/map/hike-route/jx06pry20qko?link_id=01KYJ3QC2P5YR956K18K8FEK31&lat=35.1894815&lon=-84.4900853&mode=trail#13.03/35.201/-84.39005).
+  `waypoints.gpx` (in this folder) also has both trailheads and the river waypoints and
+  imports into onX (Web Map → Import), Gaia, or CalTopo — waypoints only, no trackline;
+  pull that from the HikingProject BMT segments under Key sources.
 - Share your itinerary, the two trailhead pins, and a check-in time with your drivers.
   Cell coverage in the gorge is spotty — agree on a pickup time/place in advance, with a
   fallback.
