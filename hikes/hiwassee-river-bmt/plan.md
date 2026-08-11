@@ -19,7 +19,7 @@ climb out on Day 3 carrying water.
 
 ## Daily breakdown (primary plan)
 
-**Day 1 — Childers Creek → Towee Creek area · ~7 mi · gentle grade**
+**Day 1 — Childers Creek → Apalachia Powerhouse area · ~7 mi · gentle grade**
 - Flat riverside walking, but ~7 mi under a loaded pack is a full day. Plan a **morning
   drop-off** — with ~1h20m of driving from Chattanooga, that means leaving early.
 - Highlights: **The Narrows** (deep canyon, old riverbed rock formations), the
@@ -30,8 +30,11 @@ climb out on Day 3 carrying water.
   a minute. Camp on high ground away from the water's edge, and don't wade during a
   release.
 
-**Day 2 — Towee Creek area → Coker Creek (FR 22B) · ~5–6 mi · easy**
+**Day 2 — Apalachia Powerhouse area → Coker Creek (FR 22B) · see note below · easy**
 - The lightest day of the three, and a relaxed one. More river walking past Big Bend.
+- ⚠️ **Mileage needs resolving — see Known uncertainties.** This was written as ~5–6 mi
+  back when Day 1 ended at Towee Creek. With camp 1 moved east of the powerhouse to stay
+  legal, Day 2 is closer to **~3 mi**.
 - Camp: **Coker Creek primitive site** — boulders, swimming, the confluence. **Tank up
   all your water here** for tomorrow's dry climb (carry 3–4 L each).
 - Optional side trip: **Coker Creek Falls** (~5.4 mi round trip via the Coker Creek/JMT
@@ -189,9 +192,17 @@ also means nothing is reserved for you and a good site may be taken.
 - Exact mileages of the primitive campsites between Childers Creek and Coker Creek are
   approximate — sources agree on *where* but not precise mile markers. None of them are
   in `waypoints.gpx`; there are no verified coordinates for any campsite on this route.
-- Day 1 is listed as ~7 mi to the "Towee Creek area," but Towee Creek is around mile 4.
-  The 7-mile figure puts camp roughly a mile east of the Apalachia Powerhouse, which is
-  legal ground — the label is what's off, not the distance.
+- ⚠️ **The day mileages don't sum to the total.** 7 + 5–6 + 9 = 21–22, but the trip is
+  ~19 mi. Day 3 is the reliable anchor: ~9 mi from Coker Creek at mile ~10 gives 19. So
+  Days 1 and 2 together should be ~10, not 12–13.
+  - The original split was almost certainly Day 1 → Towee Creek (~4 mi), Day 2 → Coker
+    Creek (~6 mi). That sums correctly and matches the old "short, afternoon drop-off"
+    framing — but it camps night 1 at Towee Creek, **west of the Apalachia Powerhouse and
+    outside the dispersed-camping section.**
+  - Keeping camp 1 legal means pushing to ~7 mi, just east of the powerhouse, which makes
+    **Day 2 ~3 mi**, not 5–6. That also sums to 19.
+  - Either way one of the printed numbers is wrong. Confirm against FarOut or the onX
+    track before committing to the split.
 - Total distance reads as 18.7 mi (BMTA) vs 19.1 mi (other sources) — a normal minor
   discrepancy.
 
