@@ -237,3 +237,9 @@ powerhouse; Day 2 becomes ~3.4 mi. Same route, same ~19.4 total, one different c
   https://www.fs.usda.gov/r08/cherokee/alerts/campsite-limitations
 - National Recreation Trails — John Muir Trail (the dispersed-camping line):
   https://www.nrtapplication.org/trails/john-muir-trail
+- Hiking the Appalachians — BMT, Big Bend to Coker Creek (source of the landmark
+  distances: Big Bend → Towee 1.2 mi, Towee → Coker footbridge 6.4 mi, and Powerhouse
+  Road running alongside the river):
+  https://www.hikingtheappalachians.com/trail-reports/benton-mackaye-trail-big-bend-to-coker-creek-reliance-tennessee
+- Video — "Reliance Tennessee | Benton MacKaye Trail Ep 11":
+  https://www.youtube.com/watch?v=z39dqP6vO-E
