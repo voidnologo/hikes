@@ -19,22 +19,26 @@ climb out on Day 3 carrying water.
 
 ## Daily breakdown (primary plan)
 
-**Day 1 — Childers Creek → Apalachia Powerhouse area · ~7 mi · gentle grade**
-- Flat riverside walking, but ~7 mi under a loaded pack is a full day. Plan a **morning
-  drop-off** — with ~1h20m of driving from Chattanooga, that means leaving early.
-- Highlights: **The Narrows** (deep canyon, old riverbed rock formations), the
-  **swinging bridge at the Apalachia Powerhouse**.
-- Camp: one of the **riverside primitive sites** (there's a good one ~2 mi in, and three
-  primitive sites between Childers Creek and Big Bend). Swim, filter from the river.
+**Day 1 — Childers Creek → Towee Creek area · ~4 mi · gentle grade**
+- A genuinely short day of flat riverside walking; an afternoon drop-off works.
+- ⚠️ Camp here only if the ranger confirms the western sites are usable — Towee Creek is
+  **west of the Apalachia Powerhouse**. See Camping rules. Fallback is to push to ~7 mi
+  and camp just past the powerhouse, making Day 2 ~3.4 mi.
+- Highlights: **The Narrows** (deep canyon, old riverbed rock formations) and **Big
+  Bend** at ~2.8 mi.
+- Camp: one of the **riverside primitive sites** — a good one ~2 mi in, three between
+  Childers Creek and Big Bend, and one where the trail comes back to the river east of
+  Towee Creek. Swim, filter from the river. All of these are west of the powerhouse; see
+  the ⚠️ above.
 - ⚠️ **TVA releases** water from Apalachia on summer weekends — levels can rise ~2 ft in
   a minute. Camp on high ground away from the water's edge, and don't wade during a
   release.
 
-**Day 2 — Apalachia Powerhouse area → Coker Creek (FR 22B) · see note below · easy**
-- The lightest day of the three, and a relaxed one. More river walking past Big Bend.
-- ⚠️ **Mileage needs resolving — see Known uncertainties.** This was written as ~5–6 mi
-  back when Day 1 ended at Towee Creek. With camp 1 moved east of the powerhouse to stay
-  legal, Day 2 is closer to **~3 mi**.
+**Day 2 — Towee Creek area → Coker Creek (FR 22B) · ~6 mi · easy**
+- More river walking. You pass the **swinging bridge at the Apalachia Powerhouse** around
+  mile 6 — east of it, dispersed camping opens up.
+- Measured as 6.4 mi from the Towee Creek trailhead to the Coker Creek footbridge, which
+  is what puts Coker Creek at trail mile ~10.4.
 - Camp: **Coker Creek primitive site** — boulders, swimming, the confluence. **Tank up
   all your water here** for tomorrow's dry climb (carry 3–4 L each).
 - Optional side trip: **Coker Creek Falls** (~5.4 mi round trip via the Coker Creek/JMT
@@ -120,12 +124,28 @@ sites" named in the daily breakdown aren't a designated system you have to use; 
 just spots that have been camped before. You can pitch anywhere legal and flat, which
 also means nothing is reserved for you and a good site may be taken.
 
-- **East of the Apalachia Powerhouse only** (trail mile ~6). The National Recreation
-  Trails listing states that "dispersed camping is allowed on the section of the trail
-  located east of the Apalachia Powerhouse." Note the wording grants permission for the
-  eastern section rather than explicitly banning the west — but plan around it. It rules
-  out the site ~2 mi in that gets mentioned in trip writeups. Both planned camps are east
-  of the powerhouse, so the primary plan is fine.
+### The east/west question (this decides where you sleep night 1)
+
+Two sets of sources disagree, and neither addresses the other:
+
+- The National Recreation Trails listing says "dispersed camping is allowed on the
+  section of the trail located east of the Apalachia Powerhouse" (trail mile ~6).
+- The BMTA and trip reports name specific established sites **west** of it: a riverside
+  one ~2 mi in, three between Childers Creek and the Big Bend Picnic Area, and one where
+  the trail returns to the river east of Towee Creek.
+- A separate rule bars camping in the Big Bend Picnic Area or **within 1/4 mile of the
+  road along the river** — and Powerhouse Road parallels the water from Big Bend up to
+  the powerhouse. East of the powerhouse the road ends.
+
+The reading that makes all three fit: pitch-anywhere dispersed camping starts east of the
+powerhouse, and west of it you're limited to the established sites, which is also why the
+1/4-mile road rule and the picnic-area ban exist. **No source states this outright — it's
+an inference.** Settle it with the ranger district.
+
+**If the western sites are closed**, push Day 1 to ~7 mi and camp just east of the
+powerhouse; Day 2 becomes ~3.4 mi. Same route, same ~19.4 total, one different campsite.
+
+### Everything else
 - **5 people per campsite** — Cherokee NF closure order.
 - **14 consecutive days max**, then move 10+ miles for 7 days. Doesn't bite on a 3-day
   trip; noted so the rule isn't a surprise.
@@ -192,17 +212,13 @@ also means nothing is reserved for you and a good site may be taken.
 - Exact mileages of the primitive campsites between Childers Creek and Coker Creek are
   approximate — sources agree on *where* but not precise mile markers. None of them are
   in `waypoints.gpx`; there are no verified coordinates for any campsite on this route.
-- ⚠️ **The day mileages don't sum to the total.** 7 + 5–6 + 9 = 21–22, but the trip is
-  ~19 mi. Day 3 is the reliable anchor: ~9 mi from Coker Creek at mile ~10 gives 19. So
-  Days 1 and 2 together should be ~10, not 12–13.
-  - The original split was almost certainly Day 1 → Towee Creek (~4 mi), Day 2 → Coker
-    Creek (~6 mi). That sums correctly and matches the old "short, afternoon drop-off"
-    framing — but it camps night 1 at Towee Creek, **west of the Apalachia Powerhouse and
-    outside the dispersed-camping section.**
-  - Keeping camp 1 legal means pushing to ~7 mi, just east of the powerhouse, which makes
-    **Day 2 ~3 mi**, not 5–6. That also sums to 19.
-  - Either way one of the printed numbers is wrong. Confirm against FarOut or the onX
-    track before committing to the split.
+- **Resolved:** the day mileages now sum correctly. Landmark distances are Childers Creek
+  0 → Big Bend ~2.8 → Towee Creek ~4 → Apalachia Powerhouse ~6 → Coker Creek ~10.4, then
+  ~9 mi to Unicoi Gap. Total ~19.4, which matches the 19 mi measured on onX. An earlier
+  revision of this plan listed Day 1 as ~7 mi *and* Day 2 as ~5–6, which double-counted
+  about 3 miles.
+- ⚠️ **Unresolved: whether the Day 1 camp is legal.** See the east/west question under
+  Camping rules. This is the one open item that changes the itinerary.
 - Total distance reads as 18.7 mi (BMTA) vs 19.1 mi (other sources) — a normal minor
   discrepancy.
 
