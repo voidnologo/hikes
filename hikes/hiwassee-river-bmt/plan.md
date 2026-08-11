@@ -110,6 +110,34 @@ choked, get out at the highway instead.
 - Mid-August after a dry spell: confirm the TN-68 spring is flowing via recent FarOut
   comments before you rely on it; if unsure, carry the full 9 miles' worth from Coker.
 
+## Camping rules
+
+**It's dispersed camping — no permit, no reservation, no assigned pads.** The "primitive
+sites" named in the daily breakdown aren't a designated system you have to use; they're
+just spots that have been camped before. You can pitch anywhere legal and flat, which
+also means nothing is reserved for you and a good site may be taken.
+
+- **East of the Apalachia Powerhouse only** (trail mile ~6). The National Recreation
+  Trails listing states that "dispersed camping is allowed on the section of the trail
+  located east of the Apalachia Powerhouse." Note the wording grants permission for the
+  eastern section rather than explicitly banning the west — but plan around it. It rules
+  out the site ~2 mi in that gets mentioned in trip writeups. Both planned camps are east
+  of the powerhouse, so the primary plan is fine.
+- **5 people per campsite** — Cherokee NF closure order.
+- **14 consecutive days max**, then move 10+ miles for 7 days. Doesn't bite on a 3-day
+  trip; noted so the rule isn't a surprise.
+- **Bear food storage is mandatory forest-wide:** hang **12 ft up / 6 ft out**, or carry
+  an approved canister. A bare Ursack does not satisfy the order.
+- **Cook on the stove, not a fire** — see the mid-August notes.
+- Use an existing site where one exists rather than clearing a new one.
+- ⚠️ **Open question — how far back from the river?** Standard Forest Service guidance
+  prohibits camping within 100 ft of water outside developed or designated dispersed
+  sites. Cherokee NF's published material doesn't state a setback; it covers only stay
+  limits and group size. Both planned camps are riverside, and the whole appeal of the
+  Day 2 camp is the Coker Creek confluence, so this is worth settling. Established sites
+  are commonly treated as exempt in practice — that is *not* confirmed here. **Ask the
+  ranger district.**
+
 ## Logistics & coordination
 
 - **Drop-off:** Childers Creek trailhead, near Reliance, TN (~1733 Childers Creek Rd) —
@@ -145,6 +173,10 @@ choked, get out at the highway instead.
 1. **Fire restrictions** — Cherokee NF had a Stage 1 burn ban in spring 2026 (drought);
    appears lifted but unconfirmed. Call the **Ocoee/Hiwassee Ranger District:
    (423) 476-9700** and check https://www.fs.usda.gov/r08/cherokee/alerts
+   While you have them on the phone, ask the three things that aren't published anywhere:
+   the **setback from the river** for dispersed camping, whether the **established
+   riverside sites** are usable as-is, and — only if the river exit is in play — where the
+   **JMT east trailhead parking** actually is.
 2. **TVA Apalachia release schedule** for your dates —
    https://www.tva.com/environment/lake-levels/apalachia (affects riverside camping
    safety).
@@ -155,7 +187,11 @@ choked, get out at the highway instead.
 ## Known uncertainties (verify in FarOut before splitting days)
 
 - Exact mileages of the primitive campsites between Childers Creek and Coker Creek are
-  approximate — sources agree on *where* but not precise mile markers.
+  approximate — sources agree on *where* but not precise mile markers. None of them are
+  in `waypoints.gpx`; there are no verified coordinates for any campsite on this route.
+- Day 1 is listed as ~7 mi to the "Towee Creek area," but Towee Creek is around mile 4.
+  The 7-mile figure puts camp roughly a mile east of the Apalachia Powerhouse, which is
+  legal ground — the label is what's off, not the distance.
 - Total distance reads as 18.7 mi (BMTA) vs 19.1 mi (other sources) — a normal minor
   discrepancy.
 
@@ -170,3 +206,7 @@ choked, get out at the highway instead.
   https://www.alltrails.com/trail/us/tennessee/john-muir-national-recreation-trail-hiwassee-river-segment
 - TVA Apalachia: https://www.tva.com/environment/lake-levels/apalachia
 - Cherokee NF alerts: https://www.fs.usda.gov/r08/cherokee/alerts
+- Cherokee NF campsite limitations (stay limits, group size):
+  https://www.fs.usda.gov/r08/cherokee/alerts/campsite-limitations
+- National Recreation Trails — John Muir Trail (the dispersed-camping line):
+  https://www.nrtapplication.org/trails/john-muir-trail
